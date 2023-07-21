@@ -5,6 +5,8 @@ const thumbnailPrev = document.querySelector('.thumbnail-prev');
 const thumbnailNext = document.querySelector('.thumbnail-next');
 
 let currentSlide = 0;
+const thumbnailHeight = 120; // Height of each thumbnail image
+const numThumbnails = thumbnailImages.children.length;
 
 function updateMainImage() {
     const selectedThumbnail = thumbnailImages.children[currentSlide];
@@ -20,25 +22,40 @@ function updateMainImage() {
 }
 
 function updateThumbnailSliderPositionWithLoop() {
-    const numThumbnails = thumbnailImages.children.length;
-    const offset = currentSlide * 80;
+    // Calculate the total height of the thumbnail slider
+    const totalHeight = numThumbnails * thumbnailHeight;
+    const offset = currentSlide * thumbnailHeight * -1;
 
-    if (currentSlide === 0) {
-        currentSlide = numThumbnails - 1;
-    } else if (currentSlide === numThumbnails - 1) {
-        currentSlide = 0;
+    thumbnailImages.style.transition = 'transform 0.3s ease-in-out'; // Add a smooth transition
+
+    // Move to the corresponding slide position
+    thumbnailImages.style.transform = `translateY(${offset}px)`;
+
+    // Handle the loop effect
+    if (currentSlide === -1) {
+        // Move to the last slide position (circular loop)
+        setTimeout(() => {
+            currentSlide = numThumbnails - 1;
+            thumbnailImages.style.transition = 'none'; // Disable transition for instant jump
+            thumbnailImages.style.transform = `translateY(${-totalHeight}px)`;
+        }, 300); // Wait for the transition to complete before moving to the last slide
+    } else if (currentSlide === numThumbnails) {
+        // Move to the first slide position (circular loop)
+        setTimeout(() => {
+            currentSlide = 0;
+            thumbnailImages.style.transition = 'none'; // Disable transition for instant jump
+            thumbnailImages.style.transform = 'translateY(0)';
+        }, 300); // Wait for the transition to complete before moving to the first slide
     }
-    thumbnailImages.style.transform = `translateY(-${currentSlide * 80}px)`;
 }
 
 thumbnailPrev.addEventListener('click', () => {
-    currentSlide = Math.max(currentSlide - 1, 0);
+    currentSlide--;
     updateThumbnailSliderPositionWithLoop();
 });
 
 thumbnailNext.addEventListener('click', () => {
-    const numThumbnails = thumbnailImages.children.length;
-    currentSlide = Math.min(currentSlide + 1, numThumbnails - 1);
+    currentSlide++;
     updateThumbnailSliderPositionWithLoop();
 });
 
@@ -46,7 +63,7 @@ thumbnailImages.addEventListener('click', (event) => {
     const thumbnailIndex = Array.from(thumbnailImages.children).indexOf(event.target);
     if (thumbnailIndex !== -1) {
         currentSlide = thumbnailIndex;
-        updateMainImage(); 
+        updateMainImage();
         updateThumbnailSliderPositionWithLoop();
     }
 });

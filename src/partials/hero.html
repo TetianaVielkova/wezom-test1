@@ -1,7 +1,8 @@
 <section class="hero">
     <div class="hero__container">
         <div class="hero__container-slider">
-            <p class="breadcrumbs">Test — Каталог — Группа — Тестовый товар для верстки</p>
+            <div class="breadcrumbs">
+                <a class="breadcrumbs__link" href="#">Test</a> — <a class="breadcrumbs__link" href="#">Каталог</a> — <a class="breadcrumbs__link" href="#">Группа</a> — Тестовый товар для верстки</div>
                 <div class="slider-container">
                     <div class="thumbnail-slider">
                         <div class="slider-arrow thumbnail-prev">
@@ -55,16 +56,18 @@
                             <use xlink:href="./images/sprite.svg#shop-card"></use>
                         </svg>
                     </button>
-                    <button class="sale__favorite-btn  sale__favorite-btn-not-border" type="button" aria-label="Сравните товары" style="margin-left: 10px;">
+                    <div class="sale__favorite-block">
+                        <button class="sale__favorite-btn  sale__favorite-btn-not-border" type="button" aria-label="Сравните товары" >
                         <svg class="icon-balance" width="30px" height="30px">
                             <use xlink:href="./images/sprite.svg#balance"></use>
                         </svg>
                     </button>
-                    <button class="sale__favorite-btn" type="button" aria-label="Избраные товары" style="margin-right: 8px;">
+                    <button class="sale__favorite-btn sale__favorite-btn-border" type="button" aria-label="Избраные товары" >
                         <svg class="icon-heart" width="30px" height="30px">
                             <use xlink:href="./images/sprite.svg#heart"></use>
                         </svg>
                     </button>
+                    </div>
                     <button class="sale__btn-buy" type="button">
                         <svg class="icon-call" width="30px" height="30px">
                             <use xlink:href="./images/sprite.svg#call"></use>

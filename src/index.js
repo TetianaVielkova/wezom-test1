@@ -1,5 +1,7 @@
 import "./main.scss";
-import "./js/mask-tel";
+import "./js/category-menu";
 import "./js/hero";
-import "./js/reviews";
 import "./js/characteristics";
+import "./js/reviews";
+import "./js/products";
+import "./js/mask-tel";

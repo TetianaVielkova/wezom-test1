@@ -104,12 +104,11 @@
     top:10px;
     right: 10px;
     transition: fill 0.3s ease;
-
     &:hover{
-        fill: $permanent-dark-mint-biruza;
+        fill: $green;
+        transform: scale(1.2);
     }
-
-
+    
 }
 
 .product__raiting{
@@ -127,7 +126,6 @@
         margin-left: 9px;
     }
 }
-
 
 .products__item-title{
     color: $green;

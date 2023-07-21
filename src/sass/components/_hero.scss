@@ -19,11 +19,17 @@
 .breadcrumbs{
     color: $permanent-dark-blue;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.5;
     opacity: 0.5;
     color: #33485D;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.breadcrumbs__link{
+    &:hover{
+        border-bottom: 1px solid $permanent-blue-smoke;
+    }
 }
 
 .slider-container{
@@ -31,7 +37,6 @@
 }
 
 .thumbnail-slider{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +148,7 @@
     align-items: center;
     background-color: $green;
     border: none;
-    padding: 15.5px 20px;
+    padding: 15px 21px 16px 21px;
     color: $white;
     font-size: 24px;
     font-weight: 500;
@@ -156,21 +161,27 @@
 }
 
 .sale__favorite-btn{
-    border: 2px solid $permanent-smoke-yellow;
-    padding: 12.5px 30px;
+    padding: 12px 29px;
     background-color: inherit;
-    &-not-border{
-        border-right:none;
-        &:hover{
-            border-right:2px solid $permanent-smoke-yellow;
-        }
-    }
-
+    border: 2px solid $permanent-smoke-yellow;
+    margin: 0;
     &:hover{
-        background-color:$permanent-btn-yellow;
+        background-color: $permanent-btn-yellow;
         fill: $white;
         border: 2px solid $permanent-btn-yellow;
     }
+}
+
+.sale__favorite-btn-not-border{
+    border-right: 1px solid $permanent-smoke-yellow;
+}
+.sale__favorite-btn-border{
+    border-left: 1px solid $permanent-smoke-yellow;
+}
+
+.sale__favorite-block{
+    display: flex;
+    justify-content: center;
 }
 
 .sale__btn-buy{
@@ -181,7 +192,7 @@
     color: $permanent-blue-smoke;
     font-weight: 500;
     line-height: 1.2;
-    padding:13px 38px 13px 20px;
+    padding:12px 46px 14px 20px;
     border-bottom-right-radius: 15px;
 
     svg{
