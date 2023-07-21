@@ -57,7 +57,7 @@
 81C:\Users\Tanechka\Desktop\wezom-test1\node_modules\type-fest\source\asyncify.d.ts133344129090669754 0
 84C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\features\mp3.js133344129109459058 0
 45C:\Users\Tanechka\Desktop\wezom-test1\.sassrc133344074190011913 0
-42C:\Users\Tanechka\Desktop\wezom-test1\dist133344132496162804 1
+42C:\Users\Tanechka\Desktop\wezom-test1\dist133344132496607272 1
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\regions\SR.js133344129111002149 0
 76C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\core\src\requests133344129104647377 1
 84C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\esm\_to_primitive.js133344129105505840 0
@@ -65,11 +65,11 @@
 79C:\Users\Tanechka\Desktop\wezom-test1\node_modules\htmlnano\lib\presets\safe.js133344129095914090 0
 89C:\Users\Tanechka\Desktop\wezom-test1\node_modules\source-map\lib\source-map-generator.js133344129092911519 0
 108C:\Users\Tanechka\Desktop\wezom-test1\node_modules\csso\node_modules\css-tree\cjs\syntax\node\WhiteSpace.cjs133344129102788739 0
-50C:\Users\Tanechka\Desktop\wezom-test1\node_modules133344129123514673 1
+50C:\Users\Tanechka\Desktop\wezom-test1\node_modules133344132624597400 1
 76C:\Users\Tanechka\Desktop\wezom-test1\src\sass\components\_backet-hover.scss133344074190211926 0
 81C:\Users\Tanechka\Desktop\wezom-test1\node_modules\nth-check\lib\compile.d.ts.map133344129092249774 0
 113C:\Users\Tanechka\Desktop\wezom-test1\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\010-introduction.md133344129098792679 0
-55C:\Users\Tanechka\Desktop\wezom-test1\package-lock.json133344129123274917 0
+55C:\Users\Tanechka\Desktop\wezom-test1\package-lock.json133344132625047477 0
 76C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\_\_ts_values133344129107610821 1
 78C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\lib\index.js133344129091579755 0
 74C:\Users\Tanechka\Desktop\wezom-test1\node_modules\source-map\package.json133344129087288393 0
@@ -242,7 +242,7 @@
 83C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\core\src\ParcelConfig.js133344129102260527 0
 87C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-tree\lib\lexer\generic-urange.js133344129104707390 0
 66C:\Users\Tanechka\Desktop\wezom-test1\src\images\favicon-16x16.png133344074190041939 0
-69C:\Users\Tanechka\Desktop\wezom-test1\node_modules\.package-lock.json133344129123514673 0
+69C:\Users\Tanechka\Desktop\wezom-test1\node_modules\.package-lock.json133344132625319692 0
 72C:\Users\Tanechka\Desktop\wezom-test1\node_modules\mdn-data\css\index.js133344129088608401 0
 96C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@nodelib\fs.scandir\out\providers\common.d.ts133344129093550371 0
 120C:\Users\Tanechka\Desktop\wezom-test1\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV3\files\embed\embed2133344129099342670 1
@@ -303,7 +303,7 @@
 95C:\Users\Tanechka\Desktop\wezom-test1\node_modules\parcel-reporter-clean-dist\src\opsLimiter.js133344129092931526 0
 81C:\Users\Tanechka\Desktop\wezom-test1\node_modules\csso\node_modules\css-tree\lib133344129105801963 1
 96C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\features\async-functions.js133344129096894025 0
-56C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@lmdb133344129122655249 1
+56C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@lmdb133344132624607383 1
 78C:\Users\Tanechka\Desktop\wezom-test1\node_modules\domutils\lib\traversal.d.ts133344129095429000 0
 91C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-tree\lib\syntax\node\MediaFeature.js133344129105127364 0
 118C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\Url.js133344129102838737 0
@@ -320,14 +320,14 @@
 68C:\Users\Tanechka\Desktop\wezom-test1\node_modules\parcel\src\cli.js133344129090839758 0
 70C:\Users\Tanechka\Desktop\wezom-test1\node_modules\has-flag\index.d.ts133344129087778393 0
 80C:\Users\Tanechka\Desktop\wezom-test1\node_modules\source-map\lib\source-node.js133344129093121517 0
-68C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@msgpackr-extract133344129122655249 1
+68C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@msgpackr-extract133344132624607383 1
 94C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\core\lib\requests\PackageRequest.js133344129101790507 0
 59C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@nodelib133344129038009078 1
 98C:\Users\Tanechka\Desktop\wezom-test1\node_modules\csso\node_modules\css-tree\cjs\syntax\index.cjs133344129099382647 0
 110C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\types.js133344129093211559 0
 60C:\Users\Tanechka\Desktop\wezom-test1\node_modules\type-fest133344129093810348 1
 63C:\Users\Tanechka\Desktop\wezom-test1\node_modules\run-parallel133344129088737896 1
-58C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel133344129122655249 1
+58C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel133344132624607383 1
 92C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\reporter-dev-server\src\templates133344129088997897 1
 97C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\src\_interop_require_wildcard.mjs133344129108200022 0
 71C:\Users\Tanechka\Desktop\wezom-test1\node_modules\safe-buffer\index.js133344129087868396 0
@@ -338,7 +338,7 @@
 101C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\core\test\fixtures\local-plugin-config-pkg133344129101300489 1
 80C:\Users\Tanechka\Desktop\wezom-test1\node_modules\utility-types\dist\index.d.ts133344129094040361 0
 76C:\Users\Tanechka\Desktop\wezom-test1\node_modules\utility-types\SECURITY.md133344129093331527 0
-55C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc133344129122655249 1
+55C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc133344132624607383 1
 112C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\scope133344129102908752 1
 55C:\Users\Tanechka\Desktop\wezom-test1\node_modules\sass133344129100051248 1
 60C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@trysound133344129037989076 1
