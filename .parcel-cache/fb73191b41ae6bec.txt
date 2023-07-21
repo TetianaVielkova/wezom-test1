@@ -57,7 +57,7 @@
 81C:\Users\Tanechka\Desktop\wezom-test1\node_modules\type-fest\source\asyncify.d.ts133344129090669754 0
 84C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\features\mp3.js133344129109459058 0
 45C:\Users\Tanechka\Desktop\wezom-test1\.sassrc133344074190011913 0
-42C:\Users\Tanechka\Desktop\wezom-test1\dist133344129662662679 1
+42C:\Users\Tanechka\Desktop\wezom-test1\dist133344132496162804 1
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\regions\SR.js133344129111002149 0
 76C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\core\src\requests133344129104647377 1
 84C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\esm\_to_primitive.js133344129105505840 0
@@ -521,7 +521,7 @@
 72C:\Users\Tanechka\Desktop\wezom-test1\node_modules\msgpackr\iterators.js133344129093780368 0
 94C:\Users\Tanechka\Desktop\wezom-test1\node_modules\type-fest\source\union-to-intersection.d.ts133344129096964033 0
 87C:\Users\Tanechka\Desktop\wezom-test1\node_modules\parcel-reporter-clean-dist\.eslintrc133344129087478388 0
-65C:\Users\Tanechka\Desktop\wezom-test1\dist\index.726c9bbb.css.map133344129662652681 0
+65C:\Users\Tanechka\Desktop\wezom-test1\dist\index.726c9bbb.css.map133344132496154888 0
 59C:\Users\Tanechka\Desktop\wezom-test1\node_modules\escalade133344129091659747 1
 131C:\Users\Tanechka\Desktop\wezom-test1\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional.ps1133344129112756424 0
 101C:\Users\Tanechka\Desktop\wezom-test1\node_modules\csso\node_modules\css-tree\cjs\syntax\node\CDC.cjs133344129092901538 0
@@ -1499,7 +1499,7 @@
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\posthtml-parser\dist\index.d.ts133344129091819759 0
 81C:\Users\Tanechka\Desktop\wezom-test1\node_modules\source-map-js\lib\array-set.js133344129087938400 0
 70C:\Users\Tanechka\Desktop\wezom-test1\node_modules\htmlnano\index.d.ts133344129100051248 0
-66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider1@2x.5c157d9e.jpg133344129652252660 0
+66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider1@2x.5c157d9e.jpg133344132495994953 0
 83C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\lib\Disposable.js133344129088028418 0
 87C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-tree\lib\syntax\node\Selector.js133344129105505840 0
 73C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-tree\dist\data.cjs133344129096364083 0
@@ -1858,7 +1858,7 @@
 88C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\_\_decorate\package.json133344129106581964 0
 76C:\Users\Tanechka\Desktop\wezom-test1\node_modules\fclone\bench\package.json133344129092811528 0
 86C:\Users\Tanechka\Desktop\wezom-test1\node_modules\mdn-data\css\properties.schema.json133344129094459346 0
-67C:\Users\Tanechka\Desktop\wezom-test1\dist\product1@2x.479e68b1.jpg133344129661432694 0
+67C:\Users\Tanechka\Desktop\wezom-test1\dist\product1@2x.479e68b1.jpg133344132495994953 0
 127C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Function.js133344129098702688 0
 91C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\esm\_non_iterable_spread.js133344129104947367 0
 66C:\Users\Tanechka\Desktop\wezom-test1\node_modules\ieee754\LICENSE133344129087428411 0
@@ -1868,7 +1868,7 @@
 121C:\Users\Tanechka\Desktop\wezom-test1\node_modules\posthtml-include\node_modules\posthtml-parser\dist\location-tracker.js133344129089057906 0
 95C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\features\pagevisibility.js133344129109939062 0
 107C:\Users\Tanechka\Desktop\wezom-test1\node_modules\parcel-reporter-clean-dist\test\fixtures\packageV5\files133344129098852657 1
-63C:\Users\Tanechka\Desktop\wezom-test1\dist\favicon.a644c841.ico133344129650712681 0
+63C:\Users\Tanechka\Desktop\wezom-test1\dist\favicon.a644c841.ico133344132496004924 0
 128C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\ClassSelector.js133344129093670333 0
 80C:\Users\Tanechka\Desktop\wezom-test1\node_modules\posthtml-include\lib\index.js133344129088048386 0
 78C:\Users\Tanechka\Desktop\wezom-test1\node_modules\gsap\types\text-plugin.d.ts133344129104108875 0
@@ -1887,7 +1887,7 @@
 101C:\Users\Tanechka\Desktop\wezom-test1\node_modules\csso\node_modules\css-tree\cjs\convertor\index.cjs133344129099022698 0
 85C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\features\webm.js133344129112147285 0
 80C:\Users\Tanechka\Desktop\wezom-test1\node_modules\electron-to-chromium\index.js133344129091399779 0
-60C:\Users\Tanechka\Desktop\wezom-test1\dist\index.bafc0010.js133344129662572653 0
+60C:\Users\Tanechka\Desktop\wezom-test1\dist\index.bafc0010.js133344132495994953 0
 122C:\Users\Tanechka\Desktop\wezom-test1\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages.cmd133344129112726438 0
 84C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-select\lib\esm\compile.js.map133344129096884030 0
 85C:\Users\Tanechka\Desktop\wezom-test1\node_modules\posthtml-expressions\lib\escape.js133344129088508419 0
@@ -3751,7 +3751,7 @@
 83C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-what\lib\commonjs\types.d.ts133344129095478996 0
 95C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\features\scrollintoview.js133344129110768132 0
 71C:\Users\Tanechka\Desktop\wezom-test1\node_modules\argparse\argparse.js133344129088877907 0
-66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider4@2x.e7e1d39a.jpg133344129652252660 0
+66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider4@2x.e7e1d39a.jpg133344132495994953 0
 87C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-what\lib\commonjs\types.d.ts.map133344129093980351 0
 64C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-tree\data133344129105982034 1
 73C:\Users\Tanechka\Desktop\wezom-test1\node_modules\css-select\lib\sort.js133344129094469364 0
@@ -4567,7 +4567,7 @@
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\regions\YE.js133344129112346428 0
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\regions\YT.js133344129112356450 0
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\regions\ZA.js133344129112356450 0
-66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider2@2x.bbb92f72.jpg133344129651442694 0
+66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider2@2x.bbb92f72.jpg133344132495994953 0
 82C:\Users\Tanechka\Desktop\wezom-test1\node_modules\caniuse-lite\data\regions\ZM.js133344129112366436 0
 113C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\core\test\fixtures\custom-format-mismatch\package.json133344129104787370 0
 103C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\utils\test\input\sourcemap\referenced-min.js133344129099711281 0
@@ -5303,7 +5303,7 @@
 109C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\generator133344129102400502 1
 100C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\source-map\parcel_sourcemap_node\build.rs133344129100710447 0
 90C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\cjs\_apply_decs_2203_r.cjs133344129088628399 0
-61C:\Users\Tanechka\Desktop\wezom-test1\dist\index.726c9bbb.css133344129662572653 0
+61C:\Users\Tanechka\Desktop\wezom-test1\dist\index.726c9bbb.css133344132496034880 0
 126C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\generator\sourceMap.js133344129102400502 0
 92C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\cjs\_array_like_to_array.cjs133344129089107929 0
 89C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@swc\helpers\cjs\_array_with_holes.cjs133344129090519754 0
@@ -5564,7 +5564,7 @@
 104C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\transformer-postcss\lib\PostCSSTransformer.js133344129091889746 0
 134C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts133344129096754020 0
 79C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\transformer-json\lib133344129087828372 1
-69C:\Users\Tanechka\Desktop\wezom-test1\dist\favicon-32x32.230fb698.png133344129652252660 0
+69C:\Users\Tanechka\Desktop\wezom-test1\dist\favicon-32x32.230fb698.png133344132495984991 0
 77C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\src133344129088538434 1
 83C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\transformer-json\LICENSE133344129087378382 0
 88C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\transformer-json\package.json133344129089107929 0
@@ -5836,7 +5836,7 @@
 118C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeEmptyText.js133344129098712668 0
 117C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeMetadata.js133344129098842660 0
 122C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeScriptElement.js133344129099082669 0
-69C:\Users\Tanechka\Desktop\wezom-test1\dist\favicon-16x16.1f83bb32.png133344129651432667 0
+69C:\Users\Tanechka\Desktop\wezom-test1\dist\favicon-16x16.1f83bb32.png133344132495984991 0
 133C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\pseudo-selectors\aliases.js133344129088138439 0
 121C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeStyleElement.js133344129099142654 0
 114C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeTitle.js133344129099182670 0
@@ -6286,7 +6286,7 @@
 78C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\package.json133344129093171520 0
 69C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\src133344129092781532 1
 89C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\test\Disposable.test.js133344129090179745 0
-64C:\Users\Tanechka\Desktop\wezom-test1\dist\product1.cd433211.jpg133344129651442694 0
+64C:\Users\Tanechka\Desktop\wezom-test1\dist\product1.cd433211.jpg133344132495994953 0
 78C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\src\types.js133344129092319756 0
 79C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\lib\errors.js133344129090719752 0
 78C:\Users\Tanechka\Desktop\wezom-test1\node_modules\@parcel\events\lib\types.js133344129092089739 0
@@ -6554,11 +6554,11 @@
 62C:\Users\Tanechka\Desktop\wezom-test1\node_modules\.bin\semver133344129112756424 0
 60C:\Users\Tanechka\Desktop\wezom-test1\node_modules\.bin\svgo133344129112736427 0
 64C:\Users\Tanechka\Desktop\wezom-test1\node_modules\.bin\svgo.ps1133344129112736427 0
-60C:\Users\Tanechka\Desktop\wezom-test1\dist\index.b50665a1.js133344129662572653 0
-64C:\Users\Tanechka\Desktop\wezom-test1\dist\index.b50665a1.js.map133344129662652681 0
-64C:\Users\Tanechka\Desktop\wezom-test1\dist\index.bafc0010.js.map133344129662652681 0
-64C:\Users\Tanechka\Desktop\wezom-test1\dist\product2.7837e104.jpg133344129652252660 0
-67C:\Users\Tanechka\Desktop\wezom-test1\dist\product2@2x.b285e491.jpg133344129651442694 0
-66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider3@2x.dfce9e9b.jpg133344129661432694 0
-62C:\Users\Tanechka\Desktop\wezom-test1\dist\sprite.d843819c.svg133344129662572653 0
+60C:\Users\Tanechka\Desktop\wezom-test1\dist\index.b50665a1.js133344132495994953 0
+64C:\Users\Tanechka\Desktop\wezom-test1\dist\index.b50665a1.js.map133344132496144848 0
+64C:\Users\Tanechka\Desktop\wezom-test1\dist\index.bafc0010.js.map133344132496154888 0
+64C:\Users\Tanechka\Desktop\wezom-test1\dist\product2.7837e104.jpg133344132495994953 0
+67C:\Users\Tanechka\Desktop\wezom-test1\dist\product2@2x.b285e491.jpg133344132495994953 0
+66C:\Users\Tanechka\Desktop\wezom-test1\dist\slider3@2x.dfce9e9b.jpg133344132495994953 0
+62C:\Users\Tanechka\Desktop\wezom-test1\dist\sprite.d843819c.svg133344132495994953 0
 66C:\Users\Tanechka\Desktop\wezom-test1\.github\workflows\deploy.yml133344074186615948 0
