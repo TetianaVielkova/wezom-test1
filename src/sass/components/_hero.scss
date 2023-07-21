@@ -262,7 +262,7 @@
     border-top: 1px solid $permanent-light-blue;
     width: 100%;
 
-    &:nth-last-child(2n){
+    &:nth-last-child(n+2){
         border-bottom: 1px solid $permanent-light-blue;
     }
 }
