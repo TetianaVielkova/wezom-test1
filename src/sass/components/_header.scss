@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
 }
 
 .nav__list{
@@ -128,7 +128,7 @@
     align-items: center;
     color: $permanent-dark-blue;
     font-weight: 700;
-    line-height: 1.2; 
+    
     border: none;
     background-color: inherit;
     margin-left: 62px;
@@ -165,11 +165,10 @@
     align-items: center;
     justify-content: start;
     padding-right: 17px;
-    margin-bottom: 26px;
+    margin-top: 7px;
+    margin-bottom: 27px;
 
 }
-
-
 
 
 //==============================
@@ -179,7 +178,7 @@
     display: flex;
     align-items: center;
     background-color: $permanent-yellow;
-    padding: 20px;
+    padding: 17px;
     border-top-left-radius: 10px;
     margin-top: 20px;
     width: 331px;
@@ -277,6 +276,7 @@
     justify-content: space-between;
     height: 50px;
     padding-left: 10px;
+    cursor: pointer;
 
     .catalog__item-text{
         color: $permanent-blue-smoke;
@@ -312,7 +312,7 @@
     position: relative;
     border-radius: 10px;
     background-color: $permanent-light-blue;
-    margin-right: 15px;
+    width: 100%;
 }
 
 .header__search-input{
@@ -325,7 +325,6 @@
     line-height: 1.2;
     border-radius: 10px;
     color: $permanent-dark-blue;
-    width: 100%;
     border: 2px solid transparent;
 
     &::placeholder{
@@ -343,7 +342,7 @@
     position: absolute;
     padding: 16px 12px;
     top: 4px;
-    right: -20px;
+    right: 0;
     transition: transform 0.5s ease;
 
         &:hover,

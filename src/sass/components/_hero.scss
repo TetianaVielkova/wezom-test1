@@ -137,12 +137,13 @@
     align-items: center;
     background-color: $green;
     border: none;
-    padding: 15px 21px 16px 21px;
+    padding: 15px 20px 16px 20px;
     color: $white;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.2;
     border-bottom-left-radius: 15px;
+    margin-right: 8px;
 
     &:hover{
         background-color: $permanent-dark-mint-biruza;
@@ -150,7 +151,7 @@
 }
 
 .sale__favorite-btn{
-    padding: 12px 29px;
+    padding: 12px 29px 12.2px 29px;
     background-color: inherit;
     border: 2px solid $permanent-smoke-yellow;
     margin: 0;
@@ -181,8 +182,9 @@
     color: $permanent-blue-smoke;
     font-weight: 500;
     line-height: 1.2;
-    padding:12px 46px 14px 20px;
+    padding:12px 46px 14px 21.5px;
     border-bottom-right-radius: 15px;
+    margin-left: 8.4px;
 
     svg{
         fill: $permanent-dark-blue;

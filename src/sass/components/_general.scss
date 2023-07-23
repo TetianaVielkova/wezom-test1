@@ -47,20 +47,6 @@ html {
 
 }
 
-button:focus,
-button:active,
-input:focus,
-input:active,
-select:focus,
-select:active,
-textarea:focus,
-textarea:active,
-a:focus,
-a:active,
-svg:focus,
-svg:active  { 
-    outline: none;
-}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -74,23 +60,40 @@ body {
 
 
 .container {
-    max-width: 1520px;
     margin: 0 auto;
+    padding: 0 10px;
+    @media screen and (min-width: 480px) {
+        width: 458px;
+        padding: 0 11px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 726px;
+        padding: 0 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1138px;
+        padding: 0 31px;
+    }
+
+    @media screen and (min-width: 1522px) {
+        width: 1440px;
+        padding: 0 41px;
+    }
 }
 
-// @media screen and (min-width: 480px) {
-//     .container {
-//         width: 480px;
-//     }
-// }
-// @media screen and (min-width: 768px) {
-//     .container {
-//         width: 768px;
-//     }
-// }
-// @media screen and (min-width: 1200px) {
-//     .container {
-//         width: 1200px;
-//     }
-// }
+.title{
+    color: $permanent-dark-blue;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align:center;
+    @media screen and (min-width: 768px) {
+        text-align:start;
+    }
+}
+
+
+
+
 
