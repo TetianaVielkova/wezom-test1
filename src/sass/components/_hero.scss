@@ -32,17 +32,6 @@
     }
 }
 
-.slider-container{
-    display: flex;
-}
-
-.thumbnail-slider{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 .average-rating{
     margin-left: 22px;
     margin-right: 9px;
@@ -210,28 +199,10 @@
     }
 }
 
-.thumbnail-images{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.thumbnail-image{
-    &:not(:last-child){
-        margin-bottom: 10px;
-    }
-
-}
-
-.thumbnail-images img.selected {
-    border: 3px solid green;
-    border-radius: 5px;
-}
-
 
 .hero__container-info{
     width: 586px;
 }
-
 
 .hero__box-first{
     display: flex;
@@ -239,6 +210,7 @@
     justify-content: space-between;
     margin-top: 53px;
     margin-bottom: 30px;
+    
 }
 
 .hero__box-second{
@@ -272,6 +244,7 @@
     justify-content: space-between;
     border-top: 1px solid $permanent-light-blue;
     width: 100%;
+    cursor: pointer;
 
     &:nth-last-child(n+2){
         border-bottom: 1px solid $permanent-light-blue;
@@ -308,4 +281,73 @@
 
 .arrow-icon.flip {
     transform: scaleY(-1);
+}
+
+//====================================
+
+.slider__section {
+    width: 580px;
+    display: flex;
+}
+
+#slide-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 350px;
+    height: 580px;
+}
+
+#featured {
+    width: 580px;
+    height: 580px;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 116px;
+    height: 116px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.thumbnail.active {
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+
+
+#slider {
+    height: 510px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    gap: 10px;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    fill: #33485d;
+}
+
+.arrow:hover{
+    fill: green;
+}
+
+.arrow.inactive:hover {
+    fill: #33485d;
+    cursor: default;
 }

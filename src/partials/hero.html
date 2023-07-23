@@ -2,8 +2,9 @@
     <div class="hero__container">
         <div class="hero__container-slider">
             <div class="breadcrumbs">
-                <a class="breadcrumbs__link" href="#">Test</a> — <a class="breadcrumbs__link" href="#">Каталог</a> — <a class="breadcrumbs__link" href="#">Группа</a> — Тестовый товар для верстки</div>
-                <div class="slider-container">
+                <a class="breadcrumbs__link" href="#">Test</a> — <a class="breadcrumbs__link" href="#">Каталог</a> — <a class="breadcrumbs__link" href="#">Группа</a> — Тестовый товар для верстки
+            </div>
+                <!-- <div class="slider-container">
                     <div class="thumbnail-slider">
                         <div class="slider-arrow thumbnail-prev">
                                 <svg  width="28px" height="15px">
@@ -25,7 +26,28 @@
                     <div class="main-image">
                         <img src="./images/slider1@2x.jpg" width="580px" height="580px" alt="Image 1">
                     </div>
+                </div> -->
+                <div class="slider__section">
+                    <div id="slide-wrapper" >
+                        <svg  width="28px" height="15px" id="slideTop" class="arrow inactive" style="margin-bottom: 20px">
+                            <use href="./images/sprite.svg#arrow-big-top"></use>
+                        </svg>
+                        <div id="slider">
+                            <img class="thumbnail active" src="./images/slider1.jpg">
+                            <img class="thumbnail" src="./images/slider2.jpg">
+                            <img class="thumbnail" src="./images/slider3.jpg">
+                            <img class="thumbnail" src="./images/slider4.jpg">
+                            <img class="thumbnail" src="./images/slider5.jpg">
+                            <img class="thumbnail" src="./images/slider6.jpg">
+            
                 </div>
+                    <svg width="28px" height="15px" id="slideBottom" class="arrow"  style="margin-top: 20px">
+                        <use href="./images/sprite.svg#arrow-big-bottom"></use>
+                    </svg>		
+                </div>
+                    
+            <img id="featured" src="./images/slider1.jpg">
+            </div>
         </div>
         <div class="hero__container-info">
             <div class="hero__box-first">

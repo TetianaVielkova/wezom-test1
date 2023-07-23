@@ -1,5 +1,5 @@
 import "./main.scss";
-import "./js/category-menu";
+import "./js/header";
 import "./js/hero";
 import "./js/characteristics";
 import "./js/reviews";

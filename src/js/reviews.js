@@ -42,11 +42,9 @@ function toggleReviewsDisplay() {
         showMoreBtn.style.display = 'none';
         spanElement.textContent = 'Скрыть все';
     }
-
     allReviewsDisplayed = !allReviewsDisplayed;
     displayProductReviews(reviewsData);
 }
-
 function displayProductReviews(reviews) {
     let reviewsHtml = '';
 
@@ -75,7 +73,6 @@ function displayProductReviews(reviews) {
 }
 
 showAllBtn.addEventListener('click', toggleReviewsDisplay);
-
 showMoreBtn.addEventListener('click', () => {
     currentReviews += 2;
     displayProductReviews(reviewsData);
