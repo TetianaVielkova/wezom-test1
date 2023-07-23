@@ -1,12 +1,24 @@
 .characteristics__column {
-    display: flex;
-    width: 1231px;
-    gap: 21px;
-    margin: 0 auto;
+    margin: 30px auto;
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        display: flex;
+        gap: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 21px;
+        padding-left: 163px;
+        padding-right: 128px;
+    }
 }
 
 .characteristics__block {
-    width: 50%;
+    margin: 25px 15px 30px 15px;
+
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
 }
 
 .characteristics__list {
@@ -55,7 +67,10 @@
 }
 
 .reviews{
-    width: 50%;
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
 }
 
 
@@ -66,7 +81,6 @@
 }
 
 .title{
-
     &-green{
         color: $green;
     }
@@ -116,6 +130,11 @@
     font-size: 30px;
     font-weight: 500;
     line-height: 1.2;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 
 .reviews__btn-total{

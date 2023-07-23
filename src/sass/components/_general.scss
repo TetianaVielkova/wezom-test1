@@ -85,11 +85,13 @@ body {
 
 .title{
     color: $permanent-dark-blue;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 1.2;
-    text-align:center;
     @media screen and (min-width: 768px) {
-        text-align:start;
+        font-size: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
     }
 }
 
