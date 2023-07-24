@@ -1,25 +1,26 @@
 .footer{
     background-color: $background;
     
+    .footer__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
-    
+
 .footer__text{
     display: block;
     color: #FFF;
     line-height: 1.29; 
     opacity: 0.5;
     padding: 20px 0;
-    }
-    .footer__slash-dark{
-        color: $permanent-grey-dark;
-    }
-    .footer__slash-light{
-        color: $permanent-grey-light;
-    }
-
-
-.footer__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
+
+.footer__slash-dark{
+    color: $permanent-grey-dark;
+}
+.footer__slash-light{
+    color: $permanent-grey-light;
+}
+
+

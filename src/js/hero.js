@@ -1,3 +1,4 @@
+//==========Swiper mobile===============
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper-container", {
     navigation: {
@@ -7,53 +8,51 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
+//===========Slider Desktop========================================
 let thumbnails = document.getElementsByClassName('thumbnail');
-        let activeImage = document.getElementById('featured');
-        let lastClickedThumbnail = null;
-        let thumbnailClicked = false;
+let activeImage = document.getElementById('featured');
+let lastClickedThumbnail = null;
+let thumbnailClicked = false;
 
-        for (let i = 0; i < thumbnails.length; i++) {
-            thumbnails[i].addEventListener('mouseenter', function() {
-                if (!thumbnailClicked) {
-                    activeImage.src = this.src;
-                }
-            });
-
-            thumbnails[i].addEventListener('click', function() {
-                if (lastClickedThumbnail) {
-                    lastClickedThumbnail.classList.remove('active');
-                }
-
-                this.classList.add('active');
-                lastClickedThumbnail = this;
-                thumbnailClicked = true;
-            });
-        }
-        let slider = document.getElementById('slider');
-        let buttonTop = document.getElementById('slideTop');
-        let buttonBottom = document.getElementById('slideBottom');
-
-  function updateArrowOpacity() {
-    if (slider.scrollTop === 0) {
-        buttonTop.style.opacity = '0.5';
-        buttonTop.classList.add('inactive'); 
-    } else {
-        buttonTop.style.opacity = '1';
-        buttonTop.classList.remove('inactive'); 
+for (let i = 0; i < thumbnails.length; i++) {
+  thumbnails[i].addEventListener('mouseenter', function() {
+    if (!thumbnailClicked) {
+      activeImage.src = this.src;
     }
+});
 
-    if (slider.scrollTop + slider.offsetHeight >= slider.scrollHeight) {
-        buttonBottom.style.opacity = '0.5';
-        buttonBottom.classList.add('inactive');
-    } else {
-        buttonBottom.style.opacity = '1';
-        buttonBottom.classList.remove('inactive');
-    }
+thumbnails[i].addEventListener('click', function() {
+  if (lastClickedThumbnail) {
+    lastClickedThumbnail.classList.remove('active');
+  }
+
+    this.classList.add('active');
+    lastClickedThumbnail = this;
+    thumbnailClicked = true;
+});
 }
 
+let slider = document.getElementById('slider');
+let buttonTop = document.getElementById('slideTop');
+let buttonBottom = document.getElementById('slideBottom');
 
+function updateArrowOpacity() {
+  if (slider.scrollTop === 0) {
+    buttonTop.style.opacity = '0.5';
+      buttonTop.classList.add('inactive'); 
+    } else {
+      buttonTop.style.opacity = '1';
+      buttonTop.classList.remove('inactive'); 
+  }
 
+  if (slider.scrollTop + slider.offsetHeight >= slider.scrollHeight) {
+    buttonBottom.style.opacity = '0.5';
+    buttonBottom.classList.add('inactive');
+  } else {
+    buttonBottom.style.opacity = '1';
+    buttonBottom.classList.remove('inactive');
+  }
+}
   buttonTop.addEventListener('click', function() {
     document.getElementById('slider').scrollTop -= 130;
     updateArrowOpacity()
@@ -65,50 +64,43 @@ let thumbnails = document.getElementsByClassName('thumbnail');
   });
 
   document.getElementById('slide-wrapper').addEventListener('mouseleave', function() {
-            if (lastClickedThumbnail && !thumbnailClicked) {
-                activeImage.src = lastClickedThumbnail.src;
-            }
-        });
+    if (lastClickedThumbnail && !thumbnailClicked) {
+      activeImage.src = lastClickedThumbnail.src;
+    }
 
-        activeImage.addEventListener('mouseleave', function() {
-            thumbnailClicked = false;
-        });
+});
+  activeImage.addEventListener('mouseleave', function() {
+    thumbnailClicked = false;
+});
 
-        
-        function setInitialActiveThumbnail() {
-            lastClickedThumbnail = document.querySelector('.thumbnail.active');
-            if (lastClickedThumbnail) {
-                activeImage.src = lastClickedThumbnail.src;
-            }
-        }
+  function setInitialActiveThumbnail() {
+    lastClickedThumbnail = document.querySelector('.thumbnail.active');
+      if (lastClickedThumbnail) {
+        activeImage.src = lastClickedThumbnail.src;
+      }
+  }
+  window.addEventListener('load', function() {
+    setInitialActiveThumbnail();
+    updateArrowOpacity(); 
+    });
+    slider.addEventListener('mousemove', function(e) {
+      if (!thumbnailClicked) {
+        let thumbnail = e.target.closest('.thumbnail');
+          if (thumbnail) {
+            activeImage.src = thumbnail.src;
+          }
+      }
+    });
 
-        
-        window.addEventListener('load', function() {
-            setInitialActiveThumbnail();
-            updateArrowOpacity(); 
-        });
-
-
-        slider.addEventListener('mousemove', function(e) {
-            if (!thumbnailClicked) {
-                let thumbnail = e.target.closest('.thumbnail');
-                if (thumbnail) {
-                    activeImage.src = thumbnail.src;
-                }
-            }
-        });
-
-
-//======================================================
+//================Raiting products======================================
 
 import reviewsData from './../data/reviews.json';
 
-function calculateAverageRating(reviews) {
+function calculateRating(reviews) {
   const totalRatings = reviews.reduce((sum, review) => sum + parseInt(review.rating), 0);
   return Math.round(totalRatings / reviews.length);
 }
-
-function generateAverageRatingHTML(averageRating) {
+function generateRatingHTML(averageRating) {
   const maxRating = 5;
   const fullStars = Math.min(averageRating, maxRating);
   const emptyStars = maxRating - fullStars;
@@ -128,11 +120,9 @@ function generateAverageRatingHTML(averageRating) {
   ratingHTML += emptyStarHTML.repeat(emptyStars);
   return ratingHTML;
 }
-const averageRating = calculateAverageRating(reviewsData);
-
+const averageRating = calculateRating(reviewsData);
 const averageRatingElement = document.getElementById('averageRating');
-averageRatingElement.innerHTML = generateAverageRatingHTML(averageRating);
-
+averageRatingElement.innerHTML = generateRatingHTML(averageRating);
 function getTotalReviewsCount(reviews) {
   return reviews.length;
 }
@@ -141,10 +131,9 @@ const totalReviewsElement = document.getElementById('totalReviews');
 totalReviewsElement.textContent = totalReviewsCount;
 
 
-//=================================================
+//==============Show element===================================
 
 const showElements = document.querySelectorAll('.info__box-terms-show');
-
 const termsTextElements = document.querySelectorAll('.terms__text');
 termsTextElements.forEach((element) => {
     element.style.display = 'none';

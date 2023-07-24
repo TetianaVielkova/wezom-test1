@@ -16,10 +16,19 @@
 }
 
 .characteristics__block {
-    margin: 25px 15px 30px 15px;
+    margin: 15px 15px 30px 15px;
 
     @media screen and (min-width: 768px) {
-        width: 50%;
+        width: 40%;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 57%;
+    }
+}
+
+.title{
+    &-green{
+        color: $green;
     }
 }
 
@@ -52,8 +61,6 @@
     }
 }
 
-
-
 .characteristics__type{
     color: $permanent-dark-blue;
     font-size: 16px;
@@ -75,17 +82,10 @@
     }
 }
 
-
 .review__head{
     display: flex;
     align-items: center;
     margin-bottom: 11px;
-}
-
-.title{
-    &-green{
-        color: $green;
-    }
 }
 
 .review__name{
@@ -164,7 +164,6 @@
             border-bottom: 1.5px solid rgba(92,109,125, 0.5);
         }
     }
-    
 }
 
 .reviews__btn-loadmore{
@@ -180,7 +179,6 @@
     border-bottom-right-radius: 10px;
     background-color: transparent;
     transition: transform 0.5s ease;
-    
 
     &:hover{
         background-color: $permanent-btn-yellow;

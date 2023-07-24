@@ -2,7 +2,7 @@
     display: block;
     @media screen and (min-width: 1200px) {
         display: none;
-}
+    }
 }
 
 .menu__container{
@@ -25,6 +25,12 @@
     padding: 15px;
     border: none;
     background-color: transparent;
+}
+
+.close__icon {
+    width: 30px;
+    height: 25px;
+    fill: $white;
 }
 
 .menu__list{
@@ -127,7 +133,6 @@
 }
 
 .menu__card-button{
-
     @media screen and (max-width: 480px) {
         display: none;
     }

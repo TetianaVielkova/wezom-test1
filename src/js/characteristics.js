@@ -1,3 +1,5 @@
+//===========Toggle name button==========
+
 const button = document.querySelector('.reviews__btn-total');
 const characteristicsItems = document.querySelectorAll('.characteristics__item');
 
