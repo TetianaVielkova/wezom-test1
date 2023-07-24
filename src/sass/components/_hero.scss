@@ -6,11 +6,20 @@
 .hero__container{
     background-color: $white;
     margin: 0 auto;
-    padding-right: 54px;
+    padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 60px;
-
     @media screen and (min-width: 768px) {
+        padding-right: 54px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        max-width: 1200px;}
+
+    @media screen and (min-width: 1522px) {
         display: flex;
         align-content: center;
         justify-content: space-between;
@@ -142,28 +151,68 @@
     align-items: center;
     background-color: $green;
     border: none;
-    padding: 15px 20px 16px 20px;
+    padding: 15px 15px 16px 15px;
     color: $white;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 400;
     line-height: 1.2;
     border-bottom-left-radius: 15px;
     margin-right: 8px;
+    height: 60px;
+
+    svg{
+        margin-left: 8px;
+        width: 20px; 
+        height: 20px;
+    }
 
     &:hover{
         background-color: $permanent-dark-mint-biruza;
     }
+
+    @media screen and (min-width: 480px) {
+        svg{
+            margin-left: 10px;
+            width: 30px; 
+            height: 30px;
+            font-size: 16px;
+    }}
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 15px 20px 16px 20px;
+        svg{
+            margin-left: 41px;
+        }
+    }
 }
 
 .sale__favorite-btn{
-    padding: 12px 29px 12.2px 29px;
+    padding: 12px 15px 12.2px 15px;
     background-color: inherit;
     border: 2px solid $permanent-smoke-yellow;
     margin: 0;
+    height: 60px;
+
+    svg{
+        width: 20px; 
+        height: 20px;
+    }
     &:hover{
         background-color: $permanent-btn-yellow;
         fill: $white;
         border: 2px solid $permanent-btn-yellow;
+    }
+    @media screen and (min-width: 480px) {
+        svg{
+            width: 30px; 
+            height: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 12px 29px 12.2px 29px;
     }
 }
 
@@ -185,11 +234,30 @@
     border: 2px solid $permanent-smoke-yellow;
     background-color: transparent;
     color: $permanent-blue-smoke;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
-    padding:12px 46px 14px 21.5px;
+    font-size: 12px;
+    height: 60px;
     border-bottom-right-radius: 15px;
     margin-left: 8.4px;
+    padding: 8px 25px 10px 15px;
+    svg{
+        width: 20px; 
+        height: 20px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding: 8px 42px 10px 17.5px;
+        font-weight: 500;
+        font-size: 14px;
+        svg{
+            width: 30px; 
+            height: 30px;
+        }
+    }
+    @media screen and (min-width: 1522px) {
+        padding:12px 46px 14px 21.5px;
+    }
 
     svg{
         fill: $permanent-dark-blue;
@@ -200,15 +268,25 @@
         background-color: $permanent-btn-yellow;
         color: $white;
         border: 2px solid $permanent-btn-yellow;
-
-        svg{fill: $white;}
+        svg{
+            fill: $white;
+        }
         
     }
 }
 
 
 .hero__container-info{
-    width: 586px;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        width: 586px;
+    }
+    @media screen and (min-width: 1522px) {
+        margin: 0;
+        width: 586px;
+    }
+    
 }
 
 .hero__box-first{
@@ -225,15 +303,14 @@
     align-items: center;
 }
 
-.info__box-terms{
-    display: flex;
-    align-items: center;
-    
-}
-
 .hero__box-sale{
     border: 1px solid $permanent-light-blue;
     border-radius: 15px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 589px;
+        margin: 0 auto;
+    }
 }
 
 .hero__box-info{
@@ -310,6 +387,15 @@
     width: 580px;
     height: 580px;
     cursor: pointer;
+    margin: auto 0;
+    @media screen and (min-width: 1200px) {
+        width: 450px;
+        height: 450px;
+    }
+    @media screen and (min-width: 1522px) {
+        width: 580px;
+        height: 580px;
+    }
 }
 
 .thumbnail {
