@@ -108,7 +108,7 @@
 }
 
 .review__line{
-    width: 587px;
+    width: 100%;
     height: 1px;
     background-color: $permanent-light-blue;
     margin-top: 34px;
@@ -129,12 +129,18 @@
 
 .reviews__total{
     color: $green;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
+    margin-left: 5px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 24px;
+        font-weight: 400;
+    }
 
     @media screen and (min-width: 1200px) {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: 400;
     }
 }

@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     headerBtnMenu.addEventListener('click', (e) => {
         catalog.classList.toggle('menu__list-active');
-        iconMenu.classList.toggle('hidden'); 
-        iconClose.classList.toggle('hidden'); 
+        iconMenu.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
     });
 
     document.addEventListener('click', (e) => {

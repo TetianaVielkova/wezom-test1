@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper-container", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});
+
+
 let thumbnails = document.getElementsByClassName('thumbnail');
         let activeImage = document.getElementById('featured');
         let lastClickedThumbnail = null;
