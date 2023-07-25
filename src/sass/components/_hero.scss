@@ -310,6 +310,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .sale__btn-shopcard{
@@ -412,8 +413,14 @@ img{
         width: 20px; 
         height: 20px;
     }
-    @media screen and (min-width: 380px) {
-        padding: 8px 25px 10px 15px;
+    @media screen and (max-width: 380px) {
+        padding: 10px 15px 10px 15px;
+        font-size: 0;
+        margin-left: 0;
+        svg{
+            width: 30px; 
+            height: 30px;
+        }
     }
 
     @media screen and (min-width: 480px) {
