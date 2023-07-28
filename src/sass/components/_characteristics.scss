@@ -1,5 +1,5 @@
 .characteristics__column {
-    margin: 30px auto;
+    margin: 0 auto;
     @media screen and (min-width: 768px) {
         margin: 0 auto;
         display: flex;
@@ -10,8 +10,8 @@
         gap: 21px;
     }
     @media screen and (min-width: 1522px) {
-        padding-left: 163px;
-        padding-right: 128px;
+        padding-left: 105px;
+        padding-right: 125px;
     }
 }
 
@@ -22,38 +22,34 @@
         width: 40%;
     }
     @media screen and (min-width: 1200px) {
-        width: 57%;
+        width: 53%;
     }
 }
 
-.title{
-    &-green{
-        color: $green;
-    }
+.title__color{
+    color: $green;
 }
 
 .characteristics__list {
     margin-top: 35px;
-    margin-bottom: 35px;
-    max-width: 313px;
+    margin-bottom: 25px;
+    max-width: 300px;
 }
 
 .characteristics__item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    span {
+    .characteristics__bgimg {
         display: flex;
-        margin-top: 10px;
-        align-items: end;
-        margin-right: 8px;
-        margin-left: 8px;
+        align-items: flex-end;
         flex: 1 1 auto;
-        border: 1px dashed $permanent-light-blue;
-    }
-
-    &:not(:last-child){
-        margin-bottom: 18px;
+        background-image: url('./images/slice.png');
+        background-repeat: repeat-x;
+        background-position-y: bottom;
+        height: 2px; 
+        margin-top: 8px;
     }
 
     &:not(.show) {
@@ -61,11 +57,13 @@
     }
 }
 
+
 .characteristics__type{
     color: $permanent-dark-blue;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.9;
+    margin-right: 5px;
 }
 
 .characteristics__value{
@@ -73,12 +71,20 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.9;
+    margin-left: 5px;
+}
+
+.characteristics__btn-total{
+    margin-top: 15px;
 }
 
 .reviews{
     margin: 15px;
     @media screen and (min-width: 768px) {
         width: 50%;
+    }
+    @media screen and (min-width: 1520px) {
+        width: 650px;
     }
 }
 
@@ -111,14 +117,10 @@
     width: 100%;
     height: 1px;
     background-color: $permanent-light-blue;
-    margin-top: 34px;
-    margin-bottom: 26px;
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 
-.review__rating{
-    margin-left: 18px;
-    gap: 5px;
-}
 
 .reviews__box-title{
     display: flex;
@@ -145,45 +147,53 @@
     }
 }
 
-.reviews__btn-total{
-    color: $permanent-dark-blue;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1.5px solid transparent;
+.reviews__btn-loadmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+}
 
-    svg{
-        margin-left: 5px;
-        fill: $permanent-dark-blue;
-    }
-    span{
-        padding-bottom: 5px;
-        &:hover {
-            border-bottom: 1.5px solid rgba(92,109,125, 0.5);
+
+.review__rating {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    margin-left: 18px;
+    gap: 6px;
+
+    div{
+        svg{
+            fill: rgba(240, 200, 8, 0.5);
         }
     }
 }
 
-.reviews__btn-loadmore{
-    color: $permanent-blue-smoke;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.2;
-    height: 40px;
-    padding-left: 22px;
-    padding-right: 21px;
-    border: 1px solid $permanent-btn-yellow;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: transparent;
-    transition: transform 0.5s ease;
-
-    &:hover{
-        background-color: $permanent-btn-yellow;
-        color: $white;
-        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-        transform: scale(1.1);
+.review__rating[data-rating="1"] > div:nth-child(-n+1) {
+    svg{
+        fill: $permanent-btn-yellow;
     }
+}
+
+.review__rating[data-rating="2"] > div:nth-child(-n+2) {
+    svg{
+        fill: $permanent-btn-yellow;
+    }
+}
+.review__rating[data-rating="3"] > div:nth-child(-n+3) {
+    svg{
+        fill: $permanent-btn-yellow;
+    }
+}
+
+
+.review__rating[data-rating="4"] > div:not(:last-child) {
+    svg{
+        fill: $permanent-btn-yellow;
+    }
+    }
+
+
+.review__rating[data-rating="5"] {
+    color: $permanent-btn-yellow;
 }

@@ -8,7 +8,7 @@
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     @media screen and (min-width: 768px) {
         padding-right: 54px;
     }
@@ -34,7 +34,7 @@
     opacity: 0.5;
     color: #33485D;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
     &__link{
         &:hover{
             border-bottom: 1px solid $permanent-blue-smoke;
@@ -72,6 +72,7 @@
     @media screen and (min-width: 1522px) {
         width: 580px;
         height: 580px;
+        margin-left: 10px;
     }
 }
 
@@ -170,7 +171,7 @@ img{
     margin: 0 auto;
     @media screen and (min-width: 1200px) {
         margin: 0;
-        width: 586px;
+        width: 589px;
     }
 }
 
@@ -178,8 +179,8 @@ img{
     margin-top: 30px;
     margin-bottom: 30px;
     @media screen and (min-width: 480px) {
-        margin-top: 53px;
-        margin-bottom: 30px;
+        margin-top: 64px;
+        margin-bottom: 28px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -209,6 +210,7 @@ img{
     color: $permanent-dark-blue;
     font-weight: 500;
     line-height: 1.2;
+    margin-left: 5px;
     &:hover{
         border-bottom: 1px solid rgba(92,109,125, 0.5);
     }
@@ -218,7 +220,7 @@ img{
     color: $permanent-blue-smoke;
     font-weight: 500;
     line-height: 1.2;
-    margin-top: 15px;
+    // margin-top: 15px;
 
     span{
         color: $permanent-dark-blue;
@@ -272,8 +274,8 @@ img{
 
 .sale__box-part2{
     display: flex;
-    align-items: end;
-    padding: 39px 21px 19px 21px;
+    align-items: flex-end;
+    padding: 38px 21px 19px 17px;
 }
 
 .sale__price{
@@ -293,7 +295,8 @@ img{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
-    margin-left: 24px;
+    margin-bottom: 8px;
+    margin-left: 34px;
 }
 
 .sale__line-through{
@@ -301,7 +304,7 @@ img{
     background-color: $red;
     height: 2px;
     width: 77px;
-    top: 35%;
+    top: 41%;
     left: -10px;
     z-index: 50;
 }
@@ -433,7 +436,7 @@ img{
         }
     }
     @media screen and (min-width: 1522px) {
-        padding:12px 46px 14px 21.5px;
+        padding:12px 40px 14px 22px;
     }
 
     svg{
@@ -466,6 +469,7 @@ img{
     justify-content: space-between;
     border-top: 1px solid $permanent-light-blue;
     width: 100%;
+    padding-left: 10px;
     cursor: pointer;
 
     &:nth-last-child(n+2){
@@ -478,8 +482,8 @@ img{
     font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     display: flex;
     align-items: center;
 }
@@ -494,6 +498,8 @@ img{
     padding: 5px 3px 5px 5px;
     transition: transform 0.5s ease;
     fill: $permanent-blue-smoke;
+    padding-bottom: 18px;
+    padding-right: 12px;
 
     &:hover{
         fill: $green;

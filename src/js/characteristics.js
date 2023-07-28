@@ -1,6 +1,6 @@
 //===========Toggle name button==========
 
-const button = document.querySelector('.reviews__btn-total');
+const button = document.querySelector('.button__type-underline');
 const characteristicsItems = document.querySelectorAll('.characteristics__item');
 
 button.addEventListener('click', () => {

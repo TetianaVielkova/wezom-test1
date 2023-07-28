@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/TetianaVielkova/wezom-test1",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.9.3",
     "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.9.3",
     "buffer": "^6.0.3",
     "parcel": "^2.8.3",
     "parcel-reporter-clean-dist": "^1.0.4",
@@ -26,6 +28,7 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
-    "gsap": "^3.11.5"
+    "gsap": "^3.11.5",
+    "normalize-scss": "^7.0.1"
   }
 }

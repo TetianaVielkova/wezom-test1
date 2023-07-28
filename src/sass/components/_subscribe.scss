@@ -5,7 +5,8 @@
 }
 
 .subscribe__container{
-    padding-bottom: 51px;
+    padding: 0;
+    padding-bottom: 45px;
     margin-bottom: 40px;
     
     .subscribe__text{
@@ -13,7 +14,7 @@
         text-align: center;
         font-size: 30px;
         line-height: 1.2;
-        padding: 33px 15px 0 15px;
+        padding-top: 33px ;
     }
 
     .subscribe__form{
@@ -33,28 +34,26 @@
             justify-content: space-between;
             width: 586px;
             background-color: $white;
-            border: 2px solid #000;
             box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
 
     .subscribe__input{
-        height: 50px;
+        height: 48px;
         padding: 5px 20px;
         color: $permanent-dark-blue;
         font-size: 16px;
         line-height: 1.2;
         text-transform: uppercase;
-        border: none;
+        border: 2px solid transparent;
         margin: 20px auto;
         margin-bottom: 20px;
-        width:266px;
+        width:260px;
 
         &::placeholder{
             color: $permanent-dark-blue;
             font-size: 16px;
             line-height: 1.2;
-            text-transform: uppercase;
             opacity: 0.5;
         }
 
@@ -65,20 +64,7 @@
     }
 
     .subscribe__button-submit{
-        color: $white;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 1.2; 
-        background-color: $permanent-btn-yellow;
-        padding: 13px 44px 14px 47px;
-        margin: 2px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-
-        &:hover{
-            background-color: $permanent-dark-mint-biruza;
-        }
-
+        border: none;
         @media screen and (max-width: 480px) {
             width: 306px;
             margin: 0 auto;
