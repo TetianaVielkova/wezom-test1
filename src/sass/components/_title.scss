@@ -1,0 +1,19 @@
+.title{
+    color: $permanent-dark-blue;
+    font-size: 16px;
+    line-height: 1.2;
+    
+    @media screen and (min-width: 488px) {
+        font-size: 18px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+    }
+}
+
+.title__color{
+    color: $green;
+}

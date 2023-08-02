@@ -1,0 +1,11 @@
+.article{
+    color: $permanent-blue-smoke;
+    font-weight: 500;
+    line-height: 1.2;
+    span{
+        color: $permanent-dark-blue;
+    }
+    @media screen and (min-width: 480px) {
+        margin-bottom: 0;
+    }
+}

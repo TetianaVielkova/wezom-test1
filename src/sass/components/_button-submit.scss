@@ -1,0 +1,18 @@
+.button__submit{
+    color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.2; 
+        background-color: $permanent-btn-yellow;
+        padding: 13px 44px 14px 47px;
+        margin: 2px;
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 2px solid  $permanent-btn-yellow;
+
+        &:hover{
+            background-color: $permanent-dark-mint-biruza;
+            border: 2px solid  $permanent-dark-mint-biruza;
+        }
+}
