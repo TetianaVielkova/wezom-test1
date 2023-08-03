@@ -1,51 +1,53 @@
 <div class="menu ">
-    <div class="menu__container container">
+    <div class="header__container container">
     <div>
         <div class="menu__btn-block">
             <button class="menu__btn-burger" type="button">
                 <svg class="menu__icon" width="30px" height="25px">
                     <use xlink:href="./images/sprite.svg#menu"></use>
                 </svg>
-                <svg class=" close__icon hidden">
+                <svg class=" close__icon hidden" width="30px" height="25px">
                     <use xlink:href="./images/sprite.svg#close"></use>
                 </svg>
             </button>
-            <ul class="menu__list">
-                <li class="menu__item">
+            <div class="menu__list">
+                <div class="menu__item">
                     <button class="menu__catalog" type="button">Каталог</button>
-                </li>
-                <li  class="nav__item menu__item">
-                    <a class="nav__link">О компании</a>
-                </li>
-                <li class="nav__item menu__item">
-                    <a class="nav__link">Доставка и оплата</a>
-                </li>
-                <li class="nav__item menu__item">
-                    <a class="nav__link">Гарантия</a>
-                </li>
-                <li class="menu__item">
+                </div>
+                <div>
+                    <li  class="nav__item">
+                        <a class="nav__link">О компании</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Доставка и оплата</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link">Гарантия</a>
+                    </li>
+                </div>
+                <div class="menu__item">
                     <button class="header__favorite-btn menu__favorite-btn" type="button" aria-label="Сравните товары">
                         <svg class="icon-balance" width="20px" height="20px">
                             <use xlink:href="./images/sprite.svg#balance"></use>
                         </svg><span class="menu__span-text">Сравнить товар</span>
                     </button>
-                </li>
-                <li class="menu__item">
+                </div>
+                <div class="menu__item">
                     <button class="header__favorite-btn menu__favorite-btn" type="button" aria-label="Избраные товары">
                         <svg class="icon-heart" width="20px" height="20px">
                             <use xlink:href="./images/sprite.svg#heart"></use>
                         </svg><span class="menu__span-text">В избранное</span>
                     </button>
-                </li>
-                <li class="menu__item">
+                </div>
+                <div class="menu__item">
                     <button class="header__favorite-btn menu__favorite-btn" type="button" aria-label="Товары в корзине">
                         <svg class="icon-shop-card" width="20px" height="20px">
                             <use xlink:href="./images/sprite.svg#shop-card"></use>
                         </svg><span class="menu__span-text">Корзина</span>
                     </button>
-                </li>
-                <li class="menu__item"><a class="header__phone" href="tel:+380680000000">+38 068 000 00 00</a></li>
-                <li class="menu__item">
+                </div>
+                <div class="menu__item"><a class="header__phone" href="tel:+380680000000">+38 068 000 00 00</a></div>
+                <div class="menu__item">
                     <ul class="menu__lang">
                         <li class="lang__item">
                             <a class="lang__link">Ua</a>
@@ -54,7 +56,7 @@
                             <a class="lang__link">Ru</a>
                         </li>
                     </ul>
-            </li class="menu__item">
+            <div class="menu__item">
                 <li class="menu__item menu__btn-login">
                     <button type="button" class="header__bnt-login ">Войти
                         <svg class="icon__user" width="30px" height="30px">
@@ -62,7 +64,7 @@
                         </svg>
                     </button>
                 </li>
-            </ul>
+            </div>
             <ul class="category__items">
                 <li class="catalog__item">
                     <div class="catalog__item-main">
@@ -219,7 +221,7 @@
         </div>
     </div>
     <div>
-        <svg class="icon__logo" >
+        <svg class="icon__logo">
             <use href="./images/sprite.svg#logo"></use>
         </svg>
     </div>
@@ -231,25 +233,27 @@
             </svg>
         </a>
     </form>
-    <button class=" cart-button menu__card-button" type="button" aria-label="Товары в корзине">
+    <button class="favorite__btn-right menu__card-button" type="button" aria-label="Товары в корзине">
         <svg class="icon-shop-card" width="30px" height="30px">
             <use xlink:href="./images/sprite.svg#shop-card"></use>
         </svg>
-        <span class="shop__card-badge">3</span>
-        <div class="shop__card">
-            <svg class="shop__card-bgc">
+        <span class="favorite__btn-badge">3</span>
+        <div class="popup__card">
+            <svg class="popup__card-bgc">
                 <use xlink:href="./images/sprite.svg#shopping-card"></use>
             </svg>
-            <div class="shop__card-info">
-                <div class="shop__card-text">В корзине <span class="shop__card-quantity">3 товара</span></div>
-                <div class="shop__card-text">На сумму <span class="shop__card-quantity">30 000</span> <span class="shop__card-currency">₴</span></div>
-                <a class="order__btn-hover" href="">Оформить заказ 
-                    <svg class="icon-shop-card" width="30px" height="30px" fill="#fff" style="margin-left: 16px;">
-                        <use xlink:href="./images/sprite.svg#shop-card"></use>
-                    </svg>
-                </a>
-                <a class="shop__card-edit" href="">Редактировать заказ</a>
-            </div>
+        <div class="popup__card-info">
+        <div class="popup__card-text">В корзине <span class="popup__card-quantity">3 товара</span></div>
+        <div class="popup__card-text">На сумму <span class="popup__card-quantity">30 000</span> <span class="popup__card-currency">₴</span></div>
+        <div class="popup__btn-order">
+            <a class="order__btn" href="">Оформить заказ 
+                <svg class="icon-shop-card" width="30px" height="30px" fill="#fff" style="margin-left: 16px;">
+                    <use xlink:href="./images/sprite.svg#shop-card"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="popup__btn-edit"><a class="edit__btn" href="">Редактировать заказ</a></div>
+        </div>
         </div>
     </button>
     </div>

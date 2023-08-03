@@ -1,0 +1,29 @@
+.header__bnt-login{
+    display: flex;
+    align-items: center;
+    color: $permanent-dark-blue;
+    font-weight: 700;
+    border: none;
+    background-color: inherit;
+    margin-left: 62px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid transparent;
+
+    svg{
+        margin-left: 12px;
+        fill: $permanent-yellow;
+    }
+
+    &:hover {
+        color: $permanent-dark-blue;
+        border-bottom: 1px solid $permanent-dark-blue;
+    }
+    &:active {
+        color: $permanent-dark-mint-biruza;
+        border-bottom: 1px solid $permanent-dark-mint-biruza;
+
+        svg{
+            fill: $permanent-dark-mint-biruza;
+        }
+    }
+}

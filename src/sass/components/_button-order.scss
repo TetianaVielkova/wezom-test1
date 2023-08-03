@@ -1,0 +1,16 @@
+.order__btn{
+    color: $white;
+    padding: 30px;
+    background-color: $permanent-dark-mint-biruza;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 15px 21px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: $permanent-btn-yellow;
+    }
+}

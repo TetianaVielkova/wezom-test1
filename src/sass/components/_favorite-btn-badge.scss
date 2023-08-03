@@ -1,0 +1,17 @@
+.favorite__btn-badge{
+    position: absolute;
+    right: 10;
+    top: 7;
+    transform: translate(20%,-10%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 18px;
+    background: $permanent-yellow;
+    border: 2px solid $permanent-yellow;
+    font-weight: 700;
+    color: $permanent-dark-blue;
+}
