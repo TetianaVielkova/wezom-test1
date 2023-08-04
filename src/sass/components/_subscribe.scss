@@ -9,6 +9,9 @@
     padding-right: 15px;
     padding-bottom: 45px;
     margin-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+        padding-left: 0;
+    }
 }
 
 .subscribe__text{

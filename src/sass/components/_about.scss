@@ -14,3 +14,23 @@
         padding-right: 125px;
     }
 }
+
+.about__block-characteristics {
+    margin: 15px 15px 30px 15px;
+    @media screen and (min-width: 768px) {
+        width: 40%;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 53%;
+    }
+}
+
+.about__block-reviews{
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+    @media screen and (min-width: 1520px) {
+        width: 650px;
+    }
+}

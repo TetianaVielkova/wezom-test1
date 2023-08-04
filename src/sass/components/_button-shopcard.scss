@@ -1,0 +1,40 @@
+.button-shopcard {
+    display: flex;
+    align-items: center;
+    background-color: $green;
+    border: none;
+    padding: 15px 15px 16px 15px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    border-bottom-left-radius: 15px;
+    height: 60px;
+    svg{
+        margin-left: 8px;
+        width: 20px; 
+        height: 20px;
+    }
+
+    &:hover{
+        background-color: $permanent-dark-mint-biruza;
+    }
+
+    @media screen and (min-width: 480px) {
+        svg{
+            margin-left: 10px;
+            width: 30px; 
+            height: 30px;
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 15px 20px 16px 20px;
+        svg{
+            margin-left: 45px;
+        }
+    }
+}

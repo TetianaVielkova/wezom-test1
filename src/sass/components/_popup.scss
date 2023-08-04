@@ -11,43 +11,63 @@
     position: relative;
 
     .popup__card-bgc {
+        width: 250px;
+        height: 200px;
+        filter: drop-shadow(0px 10px 80px rgba(0, 52, 41, 0.30));
         position: absolute;
         top: 15px;
-        right: -40px;  
+        right: -45px;  
         z-index: 20;
+        @media screen and (min-width: 1200px) {
         width: 338px;
         height: 278px;
-        filter: drop-shadow(0px 10px 80px rgba(0, 52, 41, 0.30));
+        right: -40px;  
+        }
     } 
     .popup__card-info{
         position: absolute; 
         top: 28px;
-        right: -100px;  
+        right: -50px;  
         z-index: 30;
         display: flex;
         flex-direction: column;
         align-items: start;
-        width: 338px;
+        width: 210px;
         height: 258px;
-        padding: 30px;
+        padding: 15px;
         cursor: default;
+        @media screen and (min-width: 1200px) {
+            width: 338px;
+            padding: 30px;
+            right: -100px;
+        }
     }
     .popup__card-text{
         color: $permanent-blue-smoke;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.6;
+        @media screen and (min-width: 1200px) {
+            font-size: 18px;
+        }
+        
     }
     
     .popup__card-quantity{
         color: $permanent-dark-blue;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
+        @media screen and (min-width: 1200px) {
+            font-size: 18px;
+        }
     }
     
     .popup__card-currency{
         color: $permanent-dark-blue;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 400;
+        @media screen and (min-width: 1200px) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -56,13 +76,19 @@
 }
 
 .popup__btn-order{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        margin-top: 30px;
+    }
 }
 
 .popup__btn-edit{
-    margin-top: 30px;
+    margin-top: 10px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 30px;
+    }
 }
 
 

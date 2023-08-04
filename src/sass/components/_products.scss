@@ -18,7 +18,9 @@
     }
 }
 
-
+.product__rating{
+    margin-left: 9px;
+}
 
 .products__list .product__item:nth-child(n+4) {
     display: none;
@@ -62,13 +64,6 @@
 
 .product__info{
     padding: 0px 20px 38px 20px;
-}
-
-.product__rating{
-    display: flex;
-    .start{
-    margin-right: 9px;
-}
 }
 
 .product__flag{

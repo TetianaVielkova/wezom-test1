@@ -1,12 +1,17 @@
 .edit__btn{
     color: $permanent-dark-blue;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.2; 
     border-bottom: 1px solid $permanent-blue-smoke;
     transition: color 0.3s ease;
     &:hover{
         color: $permanent-btn-yellow;
         border-bottom: 1px solid $permanent-btn-yellow;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        font-weight: 500;
     }
 }

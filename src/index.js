@@ -5,3 +5,4 @@ import "./js/characteristics";
 import "./js/reviews";
 import "./js/products";
 import "./js/mask-tel";
+import "./js/mobile-menu";

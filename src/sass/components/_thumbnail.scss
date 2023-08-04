@@ -1,0 +1,12 @@
+.thumbnail {
+    width: 116px;
+    height: 116px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.thumbnail.active {
+    border: 2px solid $green;
+    border-radius: 5px;
+}

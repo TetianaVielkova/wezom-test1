@@ -1,0 +1,13 @@
+.menu__btn-category{
+    position: relative;
+    border: none;
+    background-color: $permanent-yellow;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    &:hover{
+        background-color: $permanent-dark-mint-biruza;
+    }
+}
