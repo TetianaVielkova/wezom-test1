@@ -1,4 +1,4 @@
-.header__search-form{
+.search-form{
     position: relative;
     border-radius: 10px;
     background-color: $permanent-light-blue;
@@ -6,7 +6,7 @@
 }
 
 
-.header__search-input{
+.search-input{
     outline: none;
     background-color: inherit;
     height: 44px;
@@ -49,7 +49,7 @@
 
 }
 
-.header__search-button {
+.search-button {
     position: absolute;
     padding: 16px 12px;
     top: 0px;

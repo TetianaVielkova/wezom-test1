@@ -49,3 +49,12 @@
         border-left: 1px solid $permanent-dark-mint-biruza;
     }
 }
+
+.favorite__btn-hero{
+    @media screen and (min-width: 768px) {
+        border-right: 0;
+        border-left: 0;
+        padding: 12.5px 28px 11px 27px;
+        border: 2px solid $permanent-smoke-yellow;
+    }
+}
