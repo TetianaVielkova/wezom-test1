@@ -1,0 +1,325 @@
+<!-- .geroy {
+    background: linear-gradient(180deg, #219653 0%, #FFF 100%);
+    margin-bottom: 36px;
+    padding-top: 30px;
+   
+    .container {
+     background-color: $white;
+   
+     @include media-breakpoint-up(xxl) {
+      max-width: 1525px;
+     }
+    }
+   
+    &__grid {
+     @include media-breakpoint-up(xl) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px 30px;
+     }
+    }
+}
+.product__slider {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  
+    img {
+     max-height: 100%;
+     max-width: 100%;
+    }
+   }
+  
+   .slider {
+    &__images {
+     overflow: hidden;
+     height: 580px;
+     margin-top: 15px;
+  
+     @include media-breakpoint-down(lg) {
+      height: 400px;
+     }
+  
+     @include media-breakpoint-down(md) {
+      height: 350px
+     }
+  
+     @include media-breakpoint-down(sm) {
+      height: 300px;
+     }
+    }
+  
+    &__flex {
+     display: flex;
+     align-items: flex-start;
+     max-width: 100%;
+     max-height: 100%;
+  
+     @include media-breakpoint-down(lg) {
+      flex-direction: column-reverse;
+      align-items: initial;
+     }
+    }
+  
+    &__col {
+     display: flex;
+     flex-direction: column;
+  
+     @include media-breakpoint-up(xl) {
+      width: 120px;
+      margin-right: 10px;
+     }
+  
+     @include media-breakpoint-down(lg) {
+      flex-direction: row;
+      justify-content: space-between;
+     }
+    }
+
+    &__image {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  
+     @include media-breakpoint-down(lg) {
+      height: 400px;
+     }
+  
+     @include media-breakpoint-down(md) {
+      height: 350px
+     }
+  
+     @include media-breakpoint-down(sm) {
+      height: 300px;
+     }
+    }
+  
+    &__thumbs {
+     overflow: hidden;
+  
+     @include media-breakpoint-up(xl) {
+      flex: 0 0 calc(129px * 3);
+     }
+  
+     @include media-breakpoint-up(xxl) {
+      flex: 0 0 calc(129px * 4);
+     }
+  
+     .swiper-slide {
+      height: 120px !important;
+      width: 120px;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      @include media-breakpoint-down(lg) {
+       height: 100px !important;
+      }
+  
+      @include media-breakpoint-down(md) {
+       height: auto !important;
+      }
+  
+      &-active {
+        border: 2px solid $green;
+        border-radius: 5px;
+      }
+  
+      img {
+       border: 2px solid transparent;
+       object-fit: cover;
+      }
+     }
+    }
+   }
+
+   .swiper-button-next,
+   .swiper-button-prev {
+     cursor: pointer;
+     text-align: center;
+     font-size: 14px;
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     user-select: none;
+     color: $permanent-dark-blue;
+  
+     @include media-breakpoint-down(lg) {
+      width: 30px;
+     }
+  
+     &.swiper-button-disabled {
+      opacity: 0;
+     }
+  
+     &:not(.swiper-button-disabled) {
+      &:hover {
+       color: $permanent-yellow;
+      }
+  
+      &:active {
+       color: $permanent-dark-blue;
+      }
+     }
+
+     svg {
+      @include media-breakpoint-down(lg) {
+       transform: rotate(-90deg);
+      }
+  
+      @include media-breakpoint-down(md) {
+       width: 16px;
+      }
+     }
+  
+     @include media-breakpoint-down(lg) {
+      height: 100%;
+     }
+    }
+
+
+
+    //================================================
+    import Swiper from "swiper";
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    direction: 'vertical',
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    freeMode: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 4,
+        direction: 'horizontal',
+      },
+      1200: {
+        slidesPerView: 3,
+        direction: 'vertical',
+      },
+      1500: {
+        slidesPerView: 4,
+        direction: 'vertical',
+      }
+    }
+  });
+
+  const sliderImages = new Swiper('.slider__images .swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    grabCursor: true,
+    thumbs: {
+      swiper: sliderThumbs
+    },
+    breakpoints: {
+      0: {
+        direction: 'horizontal',
+      },
+      1200: {
+        direction: 'vertical',
+      }
+    },
+  });
+});
+
+
+
+
+//=================================================
+<div class="geroy">
+    <div class="container">
+     <div class="geroy__grid">
+       <div class="product__slider">
+           <div class="product__slider">
+            <div class="slider__flex">
+             <div class="slider__col">
+              <div class="swiper-button-prev">
+               <svg  width="29" height="16">
+                    <use xlink:href="./images/sprite.svg#arrow-big-top"></use>
+               </svg>
+              </div>
+              <div class="slider__thumbs">
+               <div class="swiper-container">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                  <img src="./images/slider1.jpg" alt="Product image"/>
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="./images/slider2.jpg" alt="Product image"/>
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="./images/slider3.jpg" alt="Product image"/>
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="./images/slider4.jpg" alt="Product image"/>
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="./images/slider5.jpg" alt="Product image"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+     
+              <div class="swiper-button-next">
+               <svg  width="29" height="16">
+                <use xlink:href="./images/sprite.svg#arrow-big-bottom"></use>
+               </svg>
+              </div>
+             </div>
+     
+             <div class="slider__images">
+              <div class="swiper-container">
+               <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                 <div class="slider__image">
+                  <img src="./images/slider1.jpg" alt="Product image"/>
+                 </div>
+                </div>
+     
+                <div class="swiper-slide">
+                 <div class="slider__image">
+                  <img src="./images/slider2.jpg" alt="Product image"/>
+                 </div>
+                </div>
+     
+                <div class="swiper-slide">
+                 <div class="slider__image">
+                  <img src="./images/slider3.jpg" alt="Product image"/>
+                 </div>
+                </div>
+     
+                <div class="swiper-slide">
+                 <div class="slider__image">
+                  <img src="./images/slider4.jpg" alt="Product image"/>
+                 </div>
+                </div>
+     
+                <div class="swiper-slide">
+                 <div class="slider__image">
+                  <img src="./images/slider5.jpg" alt="Product image"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+
+
+
+ -->

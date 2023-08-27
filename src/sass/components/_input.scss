@@ -1,0 +1,21 @@
+.input{
+    color: $permanent-dark-blue;
+    font-size: 16px;
+    line-height: 1.2;
+
+    &--telephone{
+    width: 100%;
+    padding:  20px 20px 19px 20px;
+    
+    border: 2px solid $white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+        &::placeholder{
+            opacity: 0.5;
+        }
+        @media screen and (max-width: 768px) {
+            border-radius: 5px;
+        }
+    }
+}

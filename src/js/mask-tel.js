@@ -1,4 +1,4 @@
-const element = document.getElementById('telephone');
+const element = document.querySelector('.js-telephone');
 var maskOptions = {
     mask: '+{38} (\\000) 00 - 00 - 000',
     lazy: false,

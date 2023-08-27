@@ -1,184 +1,321 @@
 <section class="hero">
-    <div class="hero__container container">
-        <div>
-            <div class="hero__container-breadcrumbs">
+    <div class="container container--white">
+        <div class="row">
+            <div class="col-12 p-4">
                 <div class="breadcrumbs">
                     <a class="breadcrumbs__link" href="#">Test</a> — <a class="breadcrumbs__link" href="#">Каталог</a> — <a class="breadcrumbs__link" href="#">Группа</a> — Тестовый товар для верстки
                 </div>
             </div>
-            <div class="hero__container-slider">
-                <div class="slider__section-desctop">
-                        <div id="slide-wrapper" >
-                            <svg  width="28px" height="15px" id="slideTop" class="arrow inactive" style="margin-bottom: 20px">
+            <div class="col-12 col-xl-6">
+                <div class="slider--desctop">
+                    <div class="carousel__container">
+                      <div class="carousel__item preview">
+                        <div class="swiper-button-prev">
+                          <svg width="30px" height="15px">
+                            <use href="./images/sprite.svg#arrow-big-top"></use>
+                          </svg>
+                        </div>
+                        <div class="carousel__preview swiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider1.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider2.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider3.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider4.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider5.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider6.jpg" alt="image" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next">
+                          <svg width="30px" height="15px" style="transform: rotate(180deg)">
+                            <use href="./images/sprite.svg#arrow-big-top"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="carousel__item main">
+                        <div class="carousel swiper">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider1.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider2.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider3.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider4.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider5.jpg" alt="image" />
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="">
+                                <img src="./images/slider6.jpg" alt="image" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="slider--mobile">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/slider1.jpg"></div>
+                            <div class="swiper-slide"><img src="./images/slider2.jpg"></div>
+                            <div class="swiper-slide"><img src="./images/slider3.jpg"></div>
+                            <div class="swiper-slide"><img src="./images/slider4.jpg"></div>
+                            <div class="swiper-slide"><img src="./images/slider5.jpg"></div>
+                            <div class="swiper-slide"><img src="./images/slider6.jpg"></div>
+                        
+                        <div class="swiper-button-prev">
+                            <svg width="40px" height="20px"  style="transform: rotate(90deg);">
+                                    <use href="./images/sprite.svg#arrow-big-bottom"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg  width="40px" height="20px" style="transform: rotate(90deg);">
                                 <use href="./images/sprite.svg#arrow-big-top"></use>
                             </svg>
-                            <div id="slider">
-                                <img class="thumbnail active" src="./images/slider1.jpg">
-                                <img class="thumbnail" src="./images/slider2.jpg">
-                                <img class="thumbnail" src="./images/slider3.jpg">
-                                <img class="thumbnail" src="./images/slider4.jpg">
-                                <img class="thumbnail" src="./images/slider5.jpg">
-                                <img class="thumbnail" src="./images/slider6.jpg">
-                            </div>
-                                <svg width="28px" height="15px" id="slideBottom" class="arrow"  style="margin-top: 20px">
-                                    <use href="./images/sprite.svg#arrow-big-bottom"></use>
-                                </svg>		
-                            </div>
-                            <img id="featured" src="./images/slider1.jpg">
-                </div>
-                <div class="slider__section-mobile">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide"><img class="thumbnail" src="./images/slider1.jpg"></div>
-                                        <div class="swiper-slide"><img class="thumbnail" src="./images/slider2.jpg"></div>
-                                        <div class="swiper-slide"><img class="thumbnail" src="./images/slider3.jpg"></div>
-                                        <div class="swiper-slide"><img class="thumbnail" src="./images/slider4.jpg"></div>
-                                        <div class="swiper-slide"><img class="thumbnail" src="./images/slider5.jpg"></div>
-                                        <div class="swiper-slide"><img class="thumbnail" src="./images/slider6.jpg"></div>
-                                    </div>
-                                        <div class="swiper-button-prev">
-                                            <svg width="40px" height="20px" class="arrow arrow-mobile"  style="transform: rotate(90deg);">
-                                                <use href="./images/sprite.svg#arrow-big-bottom"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="swiper-button-next">
-                                            <svg  width="40px" height="20px" class="arrow  arrow-mobile inactive" style="transform: rotate(90deg);">
-                                                <use href="./images/sprite.svg#arrow-big-top"></use>
-                                            </svg>
-                                        </div>
-                                </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hero__container-info">
-            <div class="info__block-top">
-                <div class="info__block-top-left">
-                    <div class="info__availability">
-                        <div class="availability">
-                            <svg width="20px" height="20px">
-                                <use href="./images/sprite.svg#check"></use>
-                            </svg>
-                            <div class="availability__text availability__text-margin">В наличии</div>
-                        </div>
+            <div class="col-12 col-xl-5 ">
+            <div class="row justify-content-center">
+              <div class="col-10 col-sm-9 col-xl-12">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-auto ">
+                    <div class="availability">
+                              <svg width="20px" height="20px">
+                                  <use href="./images/sprite.svg#check"></use>
+                              </svg>
+                              <div class="availability__text availability__text-margin">В наличии</div>
                     </div>
-                    <div class="info__rating">
-                        <div class="stars" data-rating="5">
-                            <div>
-                                <svg viewBox="0 0 34 32" width="14px" height="14px">
-                                    <path  d="M6.836 31.998c-0.125 0-0.251-0.038-0.356-0.115-0.187-0.135-0.28-0.363-0.24-0.588l1.872-10.831-7.929-7.67c-0.165-0.16-0.224-0.399-0.153-0.616s0.261-0.376 0.489-0.409l10.956-1.58 4.9-9.854c0.102-0.206 0.313-0.335 0.543-0.335s0.442 0.13 0.543 0.335l4.9 9.854 10.957 1.58c0.228 0.033 0.417 0.191 0.489 0.409 0.071 0.217 0.012 0.456-0.153 0.616l-7.929 7.671 1.872 10.831c0.039 0.225-0.055 0.453-0.24 0.588-0.186 0.136-0.434 0.153-0.638 0.046l-9.8-5.113-9.801 5.113c-0.088 0.046-0.185 0.068-0.282 0.068z"></path>
-                                    </svg></div>  
-                                    <div><svg viewBox="0 0 34 32" width="14px" height="14px">
-                                    <path  d="M6.836 31.998c-0.125 0-0.251-0.038-0.356-0.115-0.187-0.135-0.28-0.363-0.24-0.588l1.872-10.831-7.929-7.67c-0.165-0.16-0.224-0.399-0.153-0.616s0.261-0.376 0.489-0.409l10.956-1.58 4.9-9.854c0.102-0.206 0.313-0.335 0.543-0.335s0.442 0.13 0.543 0.335l4.9 9.854 10.957 1.58c0.228 0.033 0.417 0.191 0.489 0.409 0.071 0.217 0.012 0.456-0.153 0.616l-7.929 7.671 1.872 10.831c0.039 0.225-0.055 0.453-0.24 0.588-0.186 0.136-0.434 0.153-0.638 0.046l-9.8-5.113-9.801 5.113c-0.088 0.046-0.185 0.068-0.282 0.068z"></path>
-                                    </svg></div> 
-                                    <div><svg viewBox="0 0 34 32" width="14px" height="14px">
-                                    <path  d="M6.836 31.998c-0.125 0-0.251-0.038-0.356-0.115-0.187-0.135-0.28-0.363-0.24-0.588l1.872-10.831-7.929-7.67c-0.165-0.16-0.224-0.399-0.153-0.616s0.261-0.376 0.489-0.409l10.956-1.58 4.9-9.854c0.102-0.206 0.313-0.335 0.543-0.335s0.442 0.13 0.543 0.335l4.9 9.854 10.957 1.58c0.228 0.033 0.417 0.191 0.489 0.409 0.071 0.217 0.012 0.456-0.153 0.616l-7.929 7.671 1.872 10.831c0.039 0.225-0.055 0.453-0.24 0.588-0.186 0.136-0.434 0.153-0.638 0.046l-9.8-5.113-9.801 5.113c-0.088 0.046-0.185 0.068-0.282 0.068z"></path>
-                                    </svg></div>  
-                                    <div><svg viewBox="0 0 34 32" width="14px" height="14px">
-                                    <path  d="M6.836 31.998c-0.125 0-0.251-0.038-0.356-0.115-0.187-0.135-0.28-0.363-0.24-0.588l1.872-10.831-7.929-7.67c-0.165-0.16-0.224-0.399-0.153-0.616s0.261-0.376 0.489-0.409l10.956-1.58 4.9-9.854c0.102-0.206 0.313-0.335 0.543-0.335s0.442 0.13 0.543 0.335l4.9 9.854 10.957 1.58c0.228 0.033 0.417 0.191 0.489 0.409 0.071 0.217 0.012 0.456-0.153 0.616l-7.929 7.671 1.872 10.831c0.039 0.225-0.055 0.453-0.24 0.588-0.186 0.136-0.434 0.153-0.638 0.046l-9.8-5.113-9.801 5.113c-0.088 0.046-0.185 0.068-0.282 0.068z"></path>
-                                    </svg></div>  
-                                    <div><svg viewBox="0 0 34 32" width="14px" height="14px" >
-                                    <path  d="M6.836 31.998c-0.125 0-0.251-0.038-0.356-0.115-0.187-0.135-0.28-0.363-0.24-0.588l1.872-10.831-7.929-7.67c-0.165-0.16-0.224-0.399-0.153-0.616s0.261-0.376 0.489-0.409l10.956-1.58 4.9-9.854c0.102-0.206 0.313-0.335 0.543-0.335s0.442 0.13 0.543 0.335l4.9 9.854 10.957 1.58c0.228 0.033 0.417 0.191 0.489 0.409 0.071 0.217 0.012 0.456-0.153 0.616l-7.929 7.671 1.872 10.831c0.039 0.225-0.055 0.453-0.24 0.588-0.186 0.136-0.434 0.153-0.638 0.046l-9.8-5.113-9.801 5.113c-0.088 0.046-0.185 0.068-0.282 0.068z"></path>
-                                    </svg>
-                            </div> 
-                        </div>
+                  </div>
+                  <div class="col align-items-center p-0">
+                    <div class="stars" data-rating="5">
+                      <div class="stars__item">
+                          <svg viewBox="0 0 34 32" width="14px" height="14px">
+                              <use href="./images/sprite.svg#star"></use>
+                          </svg>
+                      </div>
+                      <div class="stars__item">
+                          <svg viewBox="0 0 34 32" width="14px" height="14px">
+                              <use href="./images/sprite.svg#star"></use>
+                          </svg>
+                      </div>
+                      <div class="stars__item">
+                          <svg viewBox="0 0 34 32" width="14px" height="14px">
+                              <use href="./images/sprite.svg#star"></use>
+                          </svg>
+                      </div>
+                      <div class="stars__item">
+                          <svg viewBox="0 0 34 32" width="14px" height="14px">
+                              <use href="./images/sprite.svg#star"></use>
+                          </svg>
+                      </div>
+                      <div class="stars__item">
+                          <svg viewBox="0 0 34 32" width="14px" height="14px">
+                              <use href="./images/sprite.svg#star"></use>
+                          </svg>
+                      </div>
+                      <div class="stars__item-count">3</div>
                     </div>
-                    <div class="info__reviews-total">
-                        <a href="#reviews">
-                            <div class="reviews__total reviews__total-count"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero__info-top-right">
+                  </div>
+                  <div class="col-auto">
                     <div class="article">Артикул: <span>100500</span></div>
-                </div>
+                  </div>
+              </div>
+              </div>
             </div>
-            <div class="info__block-main">
-                <div class="info__box-promotion">
-                    <div class="promotion__box-sale">Акция</div>
-                    <div class="promotion__box-conditions">До 30 июля скидка — 20% на все тестовые товары</div>
-                </div>
-                <div class="info__box-price">
-                    <div class="price__box-current">3 799 <span>₴</span></div>
-                    <div class="price__box-original">4 200 ₴ <div class="price__box-original-line-through"></div></div>
-                </div>
-                <div class="info__box-sale">
-                    <div class="sale__btn-shopcard">
-                        <button class="button-shopcard" type="button">В корзину
-                            <svg class="icon-shop-card" fill="#fff">
+            <div class="row justify-content-center">
+              <div class="col-10 p-0 col-sm-9 col-xl-12">
+                <div class="description">
+                  <div class="row">
+                    <div class="col-12 p-0 ">
+                      <div class="row justify-content-center">
+                        <div class="col-3 p-0">
+                          <div class="promotion promotion--sale">Акция</div>
+                        </div>
+                        <div class="col-8 text-center p-0">
+                          <div class="promotion promotion--conditions">До 30 июля скидка — 20% на все тестовые товары</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row align-items-baseline p-4">
+                        <div class="col-auto">
+                          <div class="price">
+                            <div class="price__text-current price__text-bolt">3 799 <span class="price__text-current price__text-regular">₴</span></div>
+                          </div>
+                        </div >
+                        <div class="col-auto p-0">
+                          <div class="price">
+                          <div class="price__text-original">4 200 ₴ <div class="price__text-original-line-through"></div></div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="row justify-content-between">
+                        <div class="col-auto">
+                          <button class="button button--shopcard" type="button">В&nbspкорзину
+                            <svg class="icon-shop-card" fill="#fff" width="30px" height="30px">
                                 <use xlink:href="./images/sprite.svg#shop-card"></use>
                             </svg>
-                        </button>
-                    </div>
-                    <div class="sale__box-favorite">
-                        <button class="favorite__btn favorite__btn-hero favorite__btn-border-right" type="button" aria-label="Сравните товары" >
-                        <svg class="icon-balance" width="30px" height="30px">
-                            <use xlink:href="./images/sprite.svg#balance"></use>
-                        </svg>
-                    </button>
-                    <button class="favorite__btn favorite__btn-hero favorite__btn-border-left" type="button" aria-label="Избраные товары" >
-                        <svg class="icon-heart" width="30px" height="30px">
-                            <use xlink:href="./images/sprite.svg#heart"></use>
-                        </svg>
-                    </button>
-                    </div>
-                    <div class="sale__btn-buy">
-                        <button class="button-buy" type="button">
-                            <svg class="icon-call">
-                                <use xlink:href="./images/sprite.svg#call"></use>
-                            </svg>
-                            Купить в <br>1 клик
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="info__box-services">
-                    <div class="services__info">
-                        <div class="services__info-show" >
-                            <div class="services__title">
-                                <svg  width="20px" height="20px" style="margin-right: 8px;">
-                                    <use href="./images/sprite.svg#shield"></use>
+                          </button>
+                        </div>
+                        <div class="col-auto">
+                          <div class="row">
+                            <div class="col-6 p-0">
+                              <button class="button button--favorite" type="button" aria-label="Сравните товары" >
+                                <svg  width="30px" height="30px" >
+                                    <use xlink:href="./images/sprite.svg#balance"></use>
                                 </svg>
-                                Гарантия
+                              </button>
                             </div>
-                            <button class="services__btn-show" type="button">
-                                <svg class="arrow-icon"  width="8px" height="5px" >
-                                    <use href="./images/sprite.svg#path"></use>
+                            <div class="col-6 p-0">
+                              <button class="button button--favorite" type="button" aria-label="Избраные товары" >
+                                <svg width="30px" height="30px">
+                                    <use xlink:href="./images/sprite.svg#heart"></use>
                                 </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                            <button class="button button--buy" type="button">
+                                <svg width="30px" height="30px" style="margin-right: 10px;">
+                                    <use xlink:href="./images/sprite.svg#call"></use>
+                                </svg>
+                                <span class="button__text--small">Купить в <br>1 клик</span>
                             </button>
                         </div>
-                        <div class="services__text">Вся товары имеют сертификаты и гарантии от производителя. Вернуть можно в течении 14 дней после покупки.</div>
+                      </div>
                     </div>
-                    <div class="services__info">
-                        <div class="services__info-show" >
-                            <div class="services__title">
-                                <svg width="20px" height="20px" style="margin-right: 8px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                    <div class="col-10 col-sm-9 col-xl-12">
+                      <div class="col-12">
+                        <div class="line"></div>
+                      </div>
+                      <div class="row justify-content-between pt-4 pb-4 js-open-info">
+                        <div class="col">
+                          <div class="text text--super-bold text--big-size">
+                            <svg width="20px" height="20px" style="margin-right: 10px; margin-left: 10px;">
+                                <use href="./images/sprite.svg#shield"></use>
+                            </svg>
+                            Гарантия
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button class="button button--show" type="button">
+                            <svg class="show--icon"  width="8px" height="5px" >
+                                <use href="./images/sprite.svg#path"></use>
+                            </svg>
+                          </button>
+                        </div>
+                    </div>
+                        <div class="col-12 p-3 js-info-text">
+                          <div class="text">Вся товары имеют сертификаты и гарантии от производителя. Вернуть можно в течении 14 дней после покупки.</div>
+                        </div>
+                        <div class="col-12 ">
+                          <div class="line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-10 col-sm-9 col-xl-12">
+                        <div class="row justify-content-between pt-4 pb-4 js-open-info" >
+                            <div class="col">
+                              <div class="text text--super-bold text--big-size">
+                                <svg width="20px" height="20px" style="margin-right: 10px; margin-left: 10px;">
                                     <use href="./images/sprite.svg#delivery"></use>
                                 </svg>
                                 Условия доставки
+                              </div>
                             </div>
-                            <button class="services__btn-show" type="button">
-                                <svg class="arrow-icon"  width="8px" height="5px" >
+                            <div class="col-auto">
+                              <button class="button button--show" type="button">
+                                <svg class="show--icon"  width="8px" height="5px" >
                                     <use href="./images/sprite.svg#path"></use>
                                 </svg>
-                            </button>
+                              </button>
+                            </div>
                         </div>
-                        <div class="services__text">Доставка заказа по Украине осуществляется числом, которое Вы определяете с оператором при подтверждении заказа. В оформленном Вами заказе могут содержаться товарные позиции, которых в момент сборки заказа не окажется в наличии на складе. По Вашему желанию мы можем доставить Вам заказ частично, удалив из заказа отсутствующие на складе позиции.</div>
-                    </div>
-                    <div class="services__info">
-                        <div class="services__info-show">
-                            <div class="services__title">
-                                <svg width="20px" height="20px" style="margin-right: 8px;">
-                                    <use href="./images/sprite.svg#credit-card"></use>
-                                </svg>
-                                Условия оплаты</div>
-                                <button class="services__btn-show" type="button">
-                                    <svg class="arrow-icon"  width="8px" height="5px" >
-                                        <use href="./images/sprite.svg#path"></use>
-                                    </svg>
-                                </button>
+                        <div class="col-12 p-3 js-info-text">
+                          <div class="text">Доставка заказа по Украине осуществляется числом, которое Вы определяете с оператором при подтверждении заказа. В оформленном Вами заказе могут содержаться товарные позиции, которых в момент сборки заказа не окажется в наличии на складе. По Вашему желанию мы можем доставить Вам заказ частично, удалив из заказа отсутствующие на складе позиции.</div>
                         </div>
-                        <div class="services__text">Оплата при получении товара, Оплата картой в отделении, Картой онлайн, Google Pay, -5% скидки при оплате от 500 грн картой Mastercard Универсальная/Универсальная Gold от ПриватБанк, Безналичными для юридических лиц, Оплатить онлайн социальной картой "Пакунок малюка", Безналичными для физических лиц, Apple Pay, Mastercard, Оплатить онлайн картой "єПідтримка", Visa.</div>
+                        <div class="col-12">
+                          <div class="line"></div>
+                        </div>
+                      </div>
+                      
+                    <div class="col-10 col-sm-9 col-xl-12">
+                      <div class="row justify-content-between pt-4 pb-4 js-open-info" >
+                        <div class="col">
+                          <div class="text text--super-bold text--big-size">
+                            <svg width="20px" height="20px" style="margin-right: 10px; margin-left: 10px;">
+                                <use href="./images/sprite.svg#credit-card"></use>
+                            </svg>
+                            Условия оплаты
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button class="button button--show" type="button">
+                            <svg class="show--icon" width="8px" height="5px" >
+                                <use href="./images/sprite.svg#path"></use>
+                            </svg>
+                          </button>
+                        </div>
                     </div>
+                      <div class="col-12 p-3 js-info-text">
+                        <div class="text">Оплата при получении товара, Оплата картой в отделении, Картой онлайн, Google Pay, -5% скидки при оплате от 500 грн картой Mastercard Универсальная/Универсальная Gold от ПриватБанк, Безналичными для юридических лиц, Оплатить онлайн социальной картой "Пакунок малюка", Безналичными для физических лиц, Apple Pay, Mastercard, Оплатить онлайн картой "єПідтримка", Visa.</div>
+                      </div>
+                      <div class="col-12">
+                        <div class="line"></div>
+                      </div>
+                    </div>
+            </div>
             </div>
         </div>
     </div>

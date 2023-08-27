@@ -1,36 +1,11 @@
-.about__column {
+.about {
     margin: 0 auto;
     @media screen and (min-width: 768px) {
         margin: 0 auto;
         display: flex;
-        gap: 15px;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
-        gap: 21px;
-    }
-    @media screen and (min-width: 1522px) {
-        padding-left: 105px;
-        padding-right: 125px;
-    }
-}
-
-.about__block-characteristics {
-    margin: 15px 15px 30px 15px;
-    @media screen and (min-width: 768px) {
-        width: 40%;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 53%;
-    }
-}
-
-.about__block-reviews{
-    margin: 15px;
-    @media screen and (min-width: 768px) {
-        width: 50%;
-    }
-    @media screen and (min-width: 1520px) {
-        width: 650px;
+        margin-top: 60px;
     }
 }

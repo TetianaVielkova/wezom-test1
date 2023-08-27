@@ -1,60 +1,72 @@
-.favorite__btn{
-    border: 2px solid $permanent-smoke-yellow;
-    background-color: transparent;
-    padding: 12px;
-    &:hover{
-        background-color: $permanent-dark-mint-biruza;
-        border: 2px solid $permanent-dark-mint-biruza;
-        fill: $white;
-    }
-    @media screen and (min-width: 1200px) {
-        border-right: 0;
-        border-left: 0;
-        padding: 12.5px 28px 11px 27px;
+.button{
+    cursor: pointer;
+    &--favorite{
         border: 2px solid $permanent-smoke-yellow;
-    }
-}
-
-.favorite__btn-right{
-    border-top-right-radius: 10px;
-    fill:#33485d;
-
-    &:hover{
-        background-color: $permanent-dark-mint-biruza;
-        border: 2px solid $permanent-dark-mint-biruza;
-        fill: $white;
-
-        span{
-            background-color: $white;
-            border: 2px solid $white;
+        background-color: transparent;
+        padding: 13.5px;
+        margin: 0;
+        &:hover{
+            background-color: $permanent-dark-mint-biruza;
+            border: 2px solid $permanent-dark-mint-biruza;
+            fill: $white;
+        }
+        @media screen and (min-width: 768px) {
+            padding: 13.5px;
+        }
+        @media screen and (min-width: 992px) {
+            padding: 13.5px 28px;
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 13.5px;
+        }
+        @media screen and (min-width: 1400px) {
+            padding: 13.5px 28px;
         }
     }
 }
+
 
 .favorite__btn-right-mobile{
     @media screen and (min-width: 1200px) {
         display: none;
     }
 }
+// .favorite__btn-right{
+//     border-top-right-radius: 10px;
+//     fill:#33485d;
 
-.favorite__btn-border-right{
-    border-right: 1px solid $permanent-smoke-yellow;
-    &:hover{
-        border-right: 1px solid $permanent-dark-mint-biruza;
-    }
-}
-.favorite__btn-border-left{
-    border-left: 1px solid $permanent-smoke-yellow;
-    &:hover{
-        border-left: 1px solid $permanent-dark-mint-biruza;
-    }
-}
+//     &:hover{
+//         background-color: $permanent-dark-mint-biruza;
+//         border: 2px solid $permanent-dark-mint-biruza;
+//         fill: $white;
 
-.favorite__btn-hero{
-    @media screen and (min-width: 768px) {
-        border-right: 0;
-        border-left: 0;
-        padding: 12.5px 28px 11px 27px;
-        border: 2px solid $permanent-smoke-yellow;
-    }
-}
+//         span{
+//             background-color: $white;
+//             border: 2px solid $white;
+//         }
+//     }
+// }
+
+
+
+// .favorite__btn-border-right{
+//     border-right: 1px solid $permanent-smoke-yellow;
+//     &:hover{
+//         border-right: 1px solid $permanent-dark-mint-biruza;
+//     }
+// }
+// .favorite__btn-border-left{
+//     border-left: 1px solid $permanent-smoke-yellow;
+//     &:hover{
+//         border-left: 1px solid $permanent-dark-mint-biruza;
+//     }
+// }
+
+// .favorite__btn-hero{
+//     @media screen and (min-width: 768px) {
+//         border-right: 0;
+//         border-left: 0;
+//         padding: 13px 28px 13px 27px;
+//         border: 2px solid $permanent-smoke-yellow;
+//     }
+// }

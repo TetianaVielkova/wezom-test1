@@ -1,7 +1,7 @@
 //====Desktop open CategoryList========================
 document.addEventListener('DOMContentLoaded', () => {
-    const headerBtnMenu = document.querySelector('.header__btn-menu');
-    const catalog = document.querySelector('.category__list');
+    const headerBtnMenu = document.querySelector('.js-btn-menu');
+    const catalog = document.querySelector('.js-category');
     const iconMenu = document.querySelector('.icon__menu');
     const iconClose = document.querySelector('.icon__close');
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.header__box-category')) {
+        if (!e.target.closest('.js-close-category')) {
             catalog.classList.remove('category__list-active');
             iconMenu.classList.remove('hidden');
             iconClose.classList.add('hidden');
@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //========Mobile open Catalog List===================================
 document.addEventListener('DOMContentLoaded', () => {
-    const topBtnMenu = document.querySelector('.menu__btn-category');
-    const catalogItems = document.querySelector('.category__list-mobile');
+    const topBtnMenu = document.querySelector('.js-open-category');
+    const catalogItems = document.querySelector('.js-category-mobile');
 
     topBtnMenu.addEventListener('click', (e) => {
         catalogItems.classList.toggle('category__list-mobile-show');
     });
 
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.menu__btn-category') && !e.target.closest('.category__list-mobile') || e.target.closest('.category__item')) {
+        if (!e.target.closest('.js-open-category') && !e.target.closest('.js-category-mobile') || e.target.closest('.js-category-item')) {
             catalogItems.classList.remove('category__list-mobile-show');
         }
     });

@@ -1,0 +1,17 @@
+.button{
+    cursor: pointer;
+    &--show{
+    border: none;
+    background-color: transparent;
+    transition: transform 0.5s ease;
+    fill: $permanent-blue-smoke;
+    padding-right: 12px;
+        &:hover{
+            fill: $green;
+            transform: scale(1.3);
+        }
+    }
+    &__icon-flip {
+        transform: scaleY(-1);
+    }
+}

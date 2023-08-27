@@ -1,6 +1,7 @@
-//==========Swiper mobile===============
+// ==========Swiper mobile===============
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".swiper-container", {
+  const swiperMobile = new Swiper(".swiper-container", {
+    effect: "fade",
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -9,110 +10,68 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //===========Slider Desktop========================================
-let thumbnails = document.getElementsByClassName('thumbnail');
-let activeImage = document.getElementById('featured');
-let lastClickedThumbnail = null;
-let thumbnailClicked = false;
 
-for (let i = 0; i < thumbnails.length; i++) {
-  thumbnails[i].addEventListener('mouseenter', function() {
-    if (!thumbnailClicked) {
-      activeImage.src = this.src;
-    }
-});
+const containers = document.querySelectorAll(".carousel__container");
+containers.forEach((container) => {
+  const mainSlider = container.querySelector(".carousel");
+  const mainPreview = container.querySelector(".carousel__preview");
 
-thumbnails[i].addEventListener('click', function() {
-  if (lastClickedThumbnail) {
-    lastClickedThumbnail.classList.remove('active');
-  }
-
-    this.classList.add('active');
-    lastClickedThumbnail = this;
-    thumbnailClicked = true;
-});
-}
-
-let slider = document.getElementById('slider');
-let buttonTop = document.getElementById('slideTop');
-let buttonBottom = document.getElementById('slideBottom');
-
-function updateArrowOpacity() {
-  if (slider.scrollTop === 0) {
-    buttonTop.style.opacity = '0.5';
-      buttonTop.classList.add('inactive'); 
-    } else {
-      buttonTop.style.opacity = '1';
-      buttonTop.classList.remove('inactive'); 
-  }
-
-  if (slider.scrollTop + slider.offsetHeight >= slider.scrollHeight) {
-    buttonBottom.style.opacity = '0.5';
-    buttonBottom.classList.add('inactive');
-  } else {
-    buttonBottom.style.opacity = '1';
-    buttonBottom.classList.remove('inactive');
-  }
-}
-  buttonTop.addEventListener('click', function() {
-    document.getElementById('slider').scrollTop -= 130;
-    updateArrowOpacity()
+  let galleryThumbs = new Swiper(mainPreview, {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    freeMode: true,
+    slideToClickedSlide: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    loop: true,
+    direction: "vertical",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
 
-  buttonBottom.addEventListener('click', function() {
-    document.getElementById('slider').scrollTop += 130;
-    updateArrowOpacity()
+  let galleryTop = new Swiper(mainSlider, {
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: container.querySelector(".swiper-button-next"),
+      prevEl: container.querySelector(".swiper-button-prev"),
+    },
   });
-
-  document.getElementById('slide-wrapper').addEventListener('mouseleave', function() {
-    if (lastClickedThumbnail && !thumbnailClicked) {
-      activeImage.src = lastClickedThumbnail.src;
-    }
-
 });
-  activeImage.addEventListener('mouseleave', function() {
-    thumbnailClicked = false;
-});
-
-  function setInitialActiveThumbnail() {
-    lastClickedThumbnail = document.querySelector('.thumbnail.active');
-      if (lastClickedThumbnail) {
-        activeImage.src = lastClickedThumbnail.src;
-      }
-  }
-  window.addEventListener('load', function() {
-    setInitialActiveThumbnail();
-    updateArrowOpacity(); 
-    });
-    slider.addEventListener('mousemove', function(e) {
-      if (!thumbnailClicked) {
-        let thumbnail = e.target.closest('.thumbnail');
-          if (thumbnail) {
-            activeImage.src = thumbnail.src;
-          }
-      }
-    });
-
 
 
 //==============Show element===================================
 
-const showElements = document.querySelectorAll('.services__info-show');
-const termsTextElements = document.querySelectorAll('.services__text');
-termsTextElements.forEach((element) => {
+const showElements = document.querySelectorAll('.js-open-info');
+const termsText = document.querySelectorAll('.js-info-text');
+termsText.forEach((element) => {
     element.style.display = 'none';
 });
 
 showElements.forEach((element) => {
   element.addEventListener('click', () => {
     const termsText = element.nextElementSibling;
-    const arrowIcon = element.querySelector('.arrow-icon');
+    const arrowIcon = element.querySelector('.show--icon');
 
     if (termsText.style.display === 'none') {
       termsText.style.display = 'block';
-      arrowIcon.classList.add('services__icon-flip');
+      arrowIcon.classList.add('button__icon-flip');
     } else {
       termsText.style.display = 'none';
-      arrowIcon.classList.remove('services__icon-flip');
+      arrowIcon.classList.remove('button__icon-flip');
     }
   });
 });

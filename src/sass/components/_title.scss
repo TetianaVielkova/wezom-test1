@@ -1,19 +1,28 @@
 .title{
     color: $permanent-dark-blue;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.2;
-    
-    @media screen and (min-width: 488px) {
-        font-size: 18px;
-    }
+
     @media screen and (min-width: 768px) {
-        font-size: 20px;
+        font-size: 24px;
     }
     @media screen and (min-width: 1200px) {
         font-size: 30px;
     }
+
+    &--color{
+        color: $green;
+    }
+
+    &--white{
+        color: $white;
+    }
+    &--small{
+            color: $green;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.7;
+            margin-top: 8px;
+    }
 }
 
-.title__color{
-    color: $green;
-}

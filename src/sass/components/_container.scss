@@ -1,23 +1,22 @@
 .container {
     margin: 0 auto;
-    padding: 0 15px;
+    &--white{
+        background-color: $white;
+    }
     @media screen and (min-width: 480px) {
-        width: 450px;
-        padding: 0 15px;
+        width: 480px;
     }
 
     @media screen and (min-width: 768px) {
-        width: 726px;
-        padding: 0 25px;
+        width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1138px;
-        padding: 0 31px;
+        width: 1200px;
     }
 
-    @media screen and (min-width: 1522px) {
-        width: 1440px;
-        padding: 0 41px;
+    @media screen and (min-width: 1400px) {
+        width: 1400px;
     }
 }
+

@@ -18,7 +18,7 @@ ol {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
@@ -64,4 +64,9 @@ body {
     display: none;
 }
 
+.js-characteristics{
+    &:not(.js-show) {
+        display: none;
+    }
+}
 

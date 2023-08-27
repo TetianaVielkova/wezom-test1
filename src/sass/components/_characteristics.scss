@@ -1,46 +1,5 @@
-.characteristics__list {
-    margin-top: 35px;
-    margin-bottom: 25px;
-    max-width: 300px;
-}
 
-.characteristics__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    .characteristics__bgimg {
-        display: flex;
-        align-items: flex-end;
-        flex: 1 1 auto;
-        background-image: url('./images/slice.png');
-        background-repeat: repeat-x;
-        background-position-y: bottom;
-        height: 2px; 
-        margin-top: 8px;
-    }
 
-    &:not(.show) {
-        display: none;
-    }
-}
 
-.characteristics__type{
-    color: $permanent-dark-blue;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.9;
-    margin-right: 5px;
-}
 
-.characteristics__value{
-    color: $permanent-blue-smoke;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.9;
-    margin-left: 5px;
-}
-
-.characteristics__btn-total{
-    margin-top: 15px;
-}

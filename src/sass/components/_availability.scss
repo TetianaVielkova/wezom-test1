@@ -1,16 +1,11 @@
 .availability{
     display: flex;
     align-items: center;
-}
-
-.availability__text{
-    color: $green;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-.availability__text-margin{
-    margin-right: 22px;
+    &__text{
+        color: $green;
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
 }
