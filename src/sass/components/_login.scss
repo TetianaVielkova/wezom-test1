@@ -1,4 +1,4 @@
-.header__bnt-login{
+.login{
     display: flex;
     align-items: center;
     color: $permanent-dark-blue;
@@ -24,9 +24,5 @@
         svg{
             fill: $permanent-dark-mint-biruza;
         }
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-left: 62px;
     }
 }

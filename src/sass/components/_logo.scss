@@ -1,4 +1,16 @@
-.icon__logo{
+.logo{
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+
+    &--mobile{
+        display: block;
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+    }
+    &__icon{
     width: 40px; 
     height: 20px;
     @media screen and (min-width: 480px) {
@@ -9,4 +21,5 @@
         width: 114px; 
         height: 41px;
     }
+}
 }

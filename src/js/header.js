@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconClose = document.querySelector('.icon__close');
 
     headerBtnMenu.addEventListener('click', (e) => {
-        catalog.classList.toggle('category__list-active');
+        catalog.classList.toggle('category--active');
         iconMenu.classList.toggle('hidden'); 
         iconClose.classList.toggle('hidden'); 
     });
 
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.js-close-category')) {
-            catalog.classList.remove('category__list-active');
+            catalog.classList.remove('category--active');
             iconMenu.classList.remove('hidden');
             iconClose.classList.add('hidden');
         }
@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalogItems = document.querySelector('.js-category-mobile');
 
     topBtnMenu.addEventListener('click', (e) => {
-        catalogItems.classList.toggle('category__list-mobile-show');
+        catalogItems.classList.toggle('category--mobile-show');
     });
 
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.js-open-category') && !e.target.closest('.js-category-mobile') || e.target.closest('.js-category-item')) {
-            catalogItems.classList.remove('category__list-mobile-show');
+            catalogItems.classList.remove('category--mobile-show');
         }
     });
 });

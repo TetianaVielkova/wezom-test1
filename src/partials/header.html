@@ -1,232 +1,269 @@
 <header class="header">
     <div class="container">
-    <div class="header__container">
-        <div class="header__container-top">
-            <div class="header__box-logo">
-                <svg class="icon__logo" >
-                    <use href="./images/sprite.svg#logo"></use>
-                </svg>
-            </div>
-            <div class="header__block-btn-menu">
-                <button class="menu__btn-open js-open-menu" type="button">
-                    <svg class="menu__icon" width="30px" height="25px">
-                        <use xlink:href="./images/sprite.svg#menu"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="header__conteiner-menu js-menu-container" data-menu>
-                    <button class="menu__button--close js-close-menu" type="button" >
-                        <svg width="40" height="40">
-                            <use xlink:href="./images/sprite.svg#close"></use>
+        <div class="header__desctop">
+            <div class="row justify-content-between align-items-center mb-3">
+                <div class="col-3">
+                    <div class="logo">
+                        <svg class="logo__icon" >
+                            <use href="./images/sprite.svg#logo"></use>
                         </svg>
-                    </button>
-                    <div class="menu__box-category">
-                        <button class="menu__btn-category js-open-category" type="button">Каталог</button>
                     </div>
-                    <ul class="category__list-mobile js-category-mobile">
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#power"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 1</div>
+                </div>
+                <div class="col-6 p-0 col-xl-6">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <nav>
+                                <ul class="nav">
+                                    <li  class="nav__item ">
+                                        <a class="nav__link">О компании</a>
+                                    </li>
+                                    <li class="nav__item ">
+                                        <a class="nav__link">Доставка и оплата</a>
+                                    </li>
+                                    <li class="nav__item ">
+                                        <a class="nav__link">Гарантия</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col text-end">
+                            <div class="phone">
+                                <a class="phone__link" href="tel:+380680000000">+38 068 000 00 00</a>
                             </div>
-                            <div class="category__icon-arrows">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#cartridge"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 2</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#geometry"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 3</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#aktuators"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 4</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#servoprivod"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 5</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#prokladki"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 6</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#zap4astis"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 7</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#aktuator"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 8</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#tourbine"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 9</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    
-                        <li class="category__item js-category-item">
-                            <div class="category__item-main">
-                                <div class="category__item-icon">
-                                    <svg class="category__icon" width="34px" height="34px">
-                                        <use href="./images/sprite.svg#zap4asti"></use>
-                                    </svg>
-                                </div>
-                                <div class="category__item-text">Категория 10</div>
-                            </div>
-                            <div class="category__item-arrow">
-                                <svg class="category__icon-arrow" width="9px" height="16px">
-                                    <use href="./images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                        </li>
-            </ul>
-                    <div>
-                        <nav>
-                            <ul class="nav__list">
-                                <li  class="nav__item ">
-                                    <a class="nav__link">О компании</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row align-items-center justify-content-center offset-1">
+                        <div class="col-5 text-center">
+                            <ul class="lang">
+                                <li class="lang__item">
+                                    <a class="lang__link">Ua</a>
                                 </li>
-                                <li class="nav__item ">
-                                    <a class="nav__link">Доставка и оплата</a>
-                                </li>
-                                <li class="nav__item ">
-                                    <a class="nav__link">Гарантия</a>
+                                <li class="lang__item">
+                                    <a class="lang__link">Ru</a>
                                 </li>
                             </ul>
-                        </nav>
-                        <a class="phone" href="tel:+380680000000">+38 068 000 00 00</a>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="login">Войти
+                                <svg class="login__icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#user"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="header__box-lang-mobile">
-                        <ul class="lang__list">
-                            <li class="lang__item">
-                                <a class="lang__link">Ua</a>
-                            </li>
-                            <li class="lang__item">
-                                <a class="lang__link">Ru</a>
-                            </li>
-                        </ul>
-                        <button type="button" class="header__bnt-login">Войти
-                            <svg class="icon__user" width="20px" height="20px">
-                                <use href="./images/sprite.svg#user"></use>
-                            </svg>
-                        </button>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                    <div class="col-3">
+                        <div class="row justify-content-between js-close-category">
+                            <div class="header__box-category ">
+                                <div class="col">
+                                    <button class="button__menu js-btn-menu" type="button">
+                                        <svg class="icon__menu" width="30px" height="25px">
+                                            <use href="./images/sprite.svg#menu"></use>
+                                        </svg>
+                                        <svg class="icon__close hidden" width="30px" height="25px" fill="#fff">
+                                            <use href="./images/sprite.svg#close"></use>
+                                        </svg>
+                                        <div class="button__menu--subtitle">каталог</div>
+                                    </button>
+                                </div>
+                                <div class="col text-end header__btn-category">
+                                    <div class="category__btn">
+                                        <button class="button button--underline button--underline-white" type="button">
+                                            <div class="button__name button__name--white">Все категории</div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <ul class="category js-category">
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item--icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#power"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 1</div>
+                                        </div>
+                                        <div class="category__icon-arrows">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#cartridge"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 2</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#geometry"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 3</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#aktuators"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 4</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#servoprivod"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 5</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#prokladki"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 6</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#zap4astis"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 7</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#aktuator"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 8</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#tourbine"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 9</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#zap4asti"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 10</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="header__box-favorite header__box-favorite-mobile">
-                        <button class="favorite__btn" type="button" aria-label="Сравните товары">
+                    <div class="col-6 p-0">
+                        <form class="search">
+                            <input class="search__input" type="text" name="search" placeholder="Поиск, например “тест”"/>
+                            <button class="search__button" href="" >
+                                <svg width="18px" height="18px">
+                                    <use xlink:href="./images/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-auto text-center">
+                        <button class="button button--favorite" type="button" aria-label="Сравните товары">
                             <svg class="icon-balance" width="30px" height="30px">
                                 <use xlink:href="./images/sprite.svg#balance"></use>
                             </svg>
                         </button>
-                        <button class="favorite__btn" type="button" aria-label="Избраные товары">
+                        <button class="button button--favorite" type="button" aria-label="Избраные товары">
                             <svg class="icon-heart" width="30px" height="30px">
                                 <use xlink:href="./images/sprite.svg#heart"></use>
                             </svg>
                         </button>
-                        <button class="favorite__btn popup__button favorite__btn-right" type="button" aria-label="Товары в корзине">
+                        <button class="button button--favorite button--favorite-right popup__button" type="button" aria-label="Товары в корзине">
                             <svg class="icon-shop-card" width="30px" height="30px">
                                 <use xlink:href="./images/sprite.svg#shop-card"></use>
                             </svg>
@@ -235,313 +272,312 @@
                                 <svg class="popup__card-bgc">
                                     <use xlink:href="./images/sprite.svg#shopping-card"></use>
                                 </svg>
-                            <div class="popup__card-info">
+                            <div class="popup__text">
                             <div class="popup__card-text">В корзине <span class="popup__card-quantity">3 товара</span></div>
                             <div class="popup__card-text">На сумму <span class="popup__card-quantity">30 000</span> <span class="popup__card-currency">₴</span></div>
-                            <div class="popup__btn-order">
-                                <a class="order__btn" href="">Оформить заказ 
-                                    <svg class="icon-shop-card" width="30px" height="30px" fill="#fff" style="margin-left: 16px;">
+                            <div class="col text-center mt-4">
+                                <a class="button button--shopcard button--border button--light" href="#">Оформить заказ 
+                                    <svg class="icon-shop-card" width="30px" height="30px" fill="#fff">
                                         <use xlink:href="./images/sprite.svg#shop-card"></use>
                                     </svg>
                                 </a>
                             </div>
-                            <div class="popup__btn-edit"><a class="edit__btn" href="">Редактировать заказ</a></div>
+                            <div class="col mt-4">
+                                <a class="button button--underline" href="#"><span class="button__name--big">Редактировать заказ</span></a>
+                            </div>
                             </div>
                             </div>
                         </button>
+                </div>
+            </div>
+        </div>
+        <div class="header__mobile">
+            <div class="row justify-content-center  align-items-center">
+                <div class="col-2 col-md-1">
+                    <div class="menu menu--burger">
+                        <button class="menu__btn-open js-open-menu" type="button">
+                            <svg class="menu__icon" width="30px" height="25px">
+                                <use xlink:href="./images/sprite.svg#menu"></use>
+                            </svg>
+                        </button>
                     </div>
-            </div>
-            </div>
-            <div class="header__box-nav">
-                    <nav>
-                        <ul class="nav__list">
-                            <li  class="nav__item ">
-                                <a class="nav__link">О компании</a>
-                            </li>
-                            <li class="nav__item ">
-                                <a class="nav__link">Доставка и оплата</a>
-                            </li>
-                            <li class="nav__item ">
-                                <a class="nav__link">Гарантия</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <a class="phone" href="tel:+380680000000">+38 068 000 00 00</a>
-            </div>
-            <div class="header__box-lang">
-                    <ul class="lang__list">
-                        <li class="lang__item">
-                            <a class="lang__link">Ua</a>
-                        </li>
-                        <li class="lang__item">
-                            <a class="lang__link">Ru</a>
-                        </li>
-                    </ul>
-                    <button type="button" class="header__bnt-login">Войти
-                        <svg class="icon__user" width="20px" height="20px">
-                            <use href="./images/sprite.svg#user"></use>
+                </div>
+                <div class="col-2 col-md-1">
+                    <div class="logo--mobile">
+                        <svg class="logo__icon" >
+                            <use href="./images/sprite.svg#logo"></use>
                         </svg>
-                    </button>
-            </div>
-            <div class="header__logo-mobile">
-                <svg class="icon__logo" >
-                    <use href="./images/sprite.svg#logo"></use>
-                </svg>
-            </div>
-                <form class="header__search-form-mobile search-form " >
-                    <input class="search-input" type="text" name="search" placeholder="Поиск, например “тест”"/>
-                    <a class="search-button" href="" >
-                        <svg class="icon-search" width="18px" height="18px">
-                            <use xlink:href="./images/sprite.svg#search"></use>
+                    </div>
+                </div>
+                <div class="col-5 col-md-8">
+                    <form class="search header__search-form-mobile">
+                        <input class="search__input" type="text" name="search" placeholder="Поиск, например “тест”"/>
+                        <button class="search__button" href="" >
+                            <svg width="18px" height="18px">
+                                <use xlink:href="./images/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-1 text-end">
+                    <button class="button button--favorite popup__button button--favorite-right-mobile" type="button" aria-label="Товары в корзине">
+                        <svg  width="30px" height="30px">
+                            <use xlink:href="./images/sprite.svg#shop-card"></use>
                         </svg>
-                    </a>
-                </form>
-            <div class="header__box-favorite-btn">
-                <button class="favorite__btn popup__button favorite__btn-right favorite__btn-right-mobile" type="button" aria-label="Товары в корзине">
-                    <svg class="icon-shop-card" width="30px" height="30px">
-                        <use xlink:href="./images/sprite.svg#shop-card"></use>
-                    </svg>
-                    <span class="favorite__btn-badge">3</span>
-                    <div class="popup__card">
+                        <span class="favorite__btn-badge">3</span>
+                        <div class="popup__card">
                         <svg class="popup__card-bgc">
                             <use xlink:href="./images/sprite.svg#shopping-card"></use>
                         </svg>
-                    <div class="popup__card-info">
+                    <div class="popup__text">
                     <div class="popup__card-text">В корзине <span class="popup__card-quantity">3 товара</span></div>
                     <div class="popup__card-text">На сумму <span class="popup__card-quantity">30 000</span> <span class="popup__card-currency">₴</span></div>
-                    <div class="popup__btn-order">
-                        <a class="order__btn" href="">Оформить заказ 
+                    <div class="col text-center mt-4">
+                        <a class="button button--shopcard button--border button--light" href="#">Оформить заказ 
                             <svg class="icon-shop-card" width="30px" height="30px" fill="#fff">
                                 <use xlink:href="./images/sprite.svg#shop-card"></use>
                             </svg>
                         </a>
                     </div>
-                    <div class="popup__btn-edit"><a class="edit__btn" href="">Редактировать заказ</a></div>
+                    <div class="col mt-4">
+                        <a class="button button--underline" href="#"><span class="button__name--big">Редактировать заказ</span></a>
                     </div>
-                    </div>
+                </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="header__conteiner-menu js-menu-container" data-menu>
+                <button class="menu__button--close js-close-menu" type="button" >
+                    <svg width="40" height="40">
+                        <use xlink:href="./images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            
+            <div class="menu__box-category">
+                <button class="menu__btn-category js-open-category" type="button">Каталог</button>
+            </div>
+            <ul class="category--mobile js-category-mobile">
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item--icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#power"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 1</div>
+                                        </div>
+                                        <div class="category__icon-arrows">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#cartridge"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 2</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#geometry"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 3</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#aktuators"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 4</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#servoprivod"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 5</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#prokladki"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 6</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#zap4astis"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 7</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#aktuator"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 8</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item js-category-item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#tourbine"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 9</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+                                
+                                    <li class="category__item">
+                                        <div class="category__item--main">
+                                            <div class="category__item-icon">
+                                                <svg class="category__icon" width="34px" height="34px">
+                                                    <use href="./images/sprite.svg#zap4asti"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="category__item--text">Категория 10</div>
+                                        </div>
+                                        <div class="category__item-arrow">
+                                            <svg class="category__icon--arrow" width="9px" height="16px">
+                                                <use href="./images/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </li>
+            </ul>
+        <div class="row justify-content-between align-items-center">
+            <div class="col">
+                <nav>
+                    <ul class="nav nav--mobile">
+                        <li  class="nav__item ">
+                            <a class="nav__link">О компании</a>
+                        </li>
+                        <li class="nav__item ">
+                            <a class="nav__link">Доставка и оплата</a>
+                        </li>
+                        <li class="nav__item ">
+                            <a class="nav__link">Гарантия</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-12">
+                <div class="phone">
+                    <a class="phone__link" href="tel:+380680000000">+38 068 000 00 00</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <ul class="lang lang--mobile">
+                    <li class="lang__item">
+                        <a class="lang__link">Ua</a>
+                    </li>
+                    <li class="lang__item">
+                        <a class="lang__link">Ru</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <button type="button" class="login">Войти
+                    <svg class="icon__user" width="20px" height="20px">
+                        <use href="./images/sprite.svg#user"></use>
+                    </svg>
                 </button>
             </div>
         </div>
-        <div class="header__container-bottom">
-            <div class="header__box-category js-close-category">
-                <button class="header__btn-menu js-btn-menu" type="button">
-                    <svg class="icon__menu" width="30px" height="25px">
-                        <use href="./images/sprite.svg#menu"></use>
-                    </svg>
-                    <svg class="icon__close hidden" width="30px" height="25px" fill="#fff">
-                        <use href="./images/sprite.svg#close"></use>
-                    </svg>
-                    <div class="header__btn-menu-subtitle">каталог</div>
-                </button>
-                <div class="header__btn-category"><button class="button button--underline" type="button"><span class="button__name button__name--white">Все категории</span></button></div>
-                <ul class="category__list js-category">
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#power"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 1</div>
-                                </div>
-                                <div class="category__icon-arrows">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#cartridge"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 2</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#geometry"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 3</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#aktuators"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 4</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#servoprivod"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 5</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#prokladki"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 6</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#zap4astis"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 7</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#aktuator"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 8</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#tourbine"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 9</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                        
-                            <li class="category__item">
-                                <div class="category__item-main">
-                                    <div class="category__item-icon">
-                                        <svg class="category__icon" width="34px" height="34px">
-                                            <use href="./images/sprite.svg#zap4asti"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="category__item-text">Категория 10</div>
-                                </div>
-                                <div class="category__item-arrow">
-                                    <svg class="category__icon-arrow" width="9px" height="16px">
-                                        <use href="./images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </div>
-                            </li>
-                </ul>
-            </div>
-            <div class="header__box-search">
-                        <form class="search-form">
-                            <input class="search-input" type="text" name="search" placeholder="Поиск, например “тест”"/>
-                            <a class="search-button" href="" >
-                                <svg class="icon-search" width="18px" height="18px">
-                                    <use xlink:href="./images/sprite.svg#search"></use>
-                                </svg>
-                            </a>
-                        </form>
-            </div>
-            <div class="header__box-favorite">
-                <button class="button button--favorite" type="button" aria-label="Сравните товары">
-                    <svg class="icon-balance" width="30px" height="30px">
-                        <use xlink:href="./images/sprite.svg#balance"></use>
-                    </svg>
-                </button>
-                <button class="button button--favorite" type="button" aria-label="Избраные товары">
-                    <svg class="icon-heart" width="30px" height="30px">
-                        <use xlink:href="./images/sprite.svg#heart"></use>
-                    </svg>
-                </button>
-                <button class="button button--favorite popup__button" type="button" aria-label="Товары в корзине">
-                    <svg class="icon-shop-card" width="30px" height="30px">
-                        <use xlink:href="./images/sprite.svg#shop-card"></use>
-                    </svg>
-                    <span class="favorite__btn-badge">3</span>
-                    <div class="popup__card">
-                        <svg class="popup__card-bgc">
-                            <use xlink:href="./images/sprite.svg#shopping-card"></use>
-                        </svg>
-                    <div class="popup__card-info">
-                    <div class="popup__card-text">В корзине <span class="popup__card-quantity">3 товара</span></div>
-                    <div class="popup__card-text">На сумму <span class="popup__card-quantity">30 000</span> <span class="popup__card-currency">₴</span></div>
-                    <div class="popup__btn-order">
-                        <a class="order__btn" href="">Оформить заказ 
-                            <svg class="icon-shop-card" width="30px" height="30px" fill="#fff">
-                                <use xlink:href="./images/sprite.svg#shop-card"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="popup__btn-edit"><a class="edit__btn" href="">Редактировать заказ</a></div>
-                    </div>
-                    </div>
-                </button>
+        <div class="header__box-favorite header__box-favorite-mobile">
+            <button class="button button--favorite" type="button" aria-label="Сравните товары">
+                <svg class="icon-balance" width="30px" height="30px">
+                    <use xlink:href="./images/sprite.svg#balance"></use>
+                </svg>
+            </button>
+            <button class="button button--favorite" type="button" aria-label="Избраные товары">
+                <svg class="icon-heart" width="30px" height="30px">
+                    <use xlink:href="./images/sprite.svg#heart"></use>
+                </svg>
+            </button>
+            <button class="button button--favorite popup__button favorite__btn-right" type="button" aria-label="Товары в корзине">
+                <svg class="icon-shop-card" width="30px" height="30px">
+                    <use xlink:href="./images/sprite.svg#shop-card"></use>
+                </svg>
+                <span class="favorite__btn-badge">3</span>
+            </button>
+        </div>
             </div>
         </div>
     </div>
-</div>
 </header>

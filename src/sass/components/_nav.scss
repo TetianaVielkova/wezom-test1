@@ -1,52 +1,60 @@
-.nav__list{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.nav{
+    display: none;
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 0;
         margin-top: 0px;
-    }
-}
-
-.nav__item{
-    color: $permanent-dark-blue;
-    font-weight: 700;
-    line-height: 1.7;
-    padding-bottom: 7px;
-
-    &:not(:last-child){
-        margin-bottom: 15px;
+        margin-left: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
-        &:not(:last-child){
-            margin-bottom: 0px;
+    &--mobile{
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        @media screen and (min-width: 1200px) {
+            display: none;
         }
-        &:not(:last-child) {
-            &::after{
-            content: '';
-            display: inline-block;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background-color: $permanent-light-blue;
-            margin-left: 8px;
-            margin-right: 8px;
+    }
+    &__item{
+        color: $permanent-dark-blue;
+        font-weight: 700;
+        line-height: 1.7;
+        padding-bottom: 7px;
+    
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            &:not(:last-child){
+                margin-bottom: 0px;
+            }
+            &:not(:last-child) {
+                &::after{
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $permanent-light-blue;
+                margin-left: 8px;
+                margin-right: 8px;
+                }
             }
         }
     }
+    
+    &__link{
+        &:hover {
+            padding-bottom: 7px;
+            color: $permanent-dark-blue;
+            border-bottom: 1px solid $permanent-dark-blue;
+        }
+        &:active {
+            color: $permanent-dark-mint-biruza;
+            border-bottom: 1px solid $permanent-dark-mint-biruza;
+        }
+    }
 }
 
-.nav__link{
-    &:hover {
-        padding-bottom: 7px;
-        color: $permanent-dark-blue;
-        border-bottom: 1px solid $permanent-dark-blue;
-    }
-    &:active {
-        color: $permanent-dark-mint-biruza;
-        border-bottom: 1px solid $permanent-dark-mint-biruza;
-    }
-}

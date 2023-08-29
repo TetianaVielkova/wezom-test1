@@ -12,6 +12,7 @@
     border-bottom-left-radius: 10px;
     height: 60px;
     padding: 10px;
+    
     svg{
         margin-left: 20px;
     }
@@ -34,4 +35,14 @@
         padding: 15px;
     }
 }
+    &--border{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    &--light{
+        background-color: $permanent-dark-mint-biruza;
+        &:hover{
+            background-color: $green;
+        }
+    }
 }

@@ -24,11 +24,11 @@
         right: -40px;  
         }
     } 
-    .popup__card-info{
+    .popup__text{
         position: absolute; 
         top: 28px;
         right: -50px;  
-        z-index: 30;
+        z-index: 230;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -39,7 +39,6 @@
         @media screen and (min-width: 1200px) {
             width: 338px;
             padding: 30px;
-            right: -100px;
         }
     }
     .popup__card-text{
@@ -80,14 +79,8 @@
     display: flex;
     align-items: center;
     @media screen and (min-width: 1200px) {
-        margin-top: 30px;
-    }
-}
-
-.popup__btn-edit{
-    margin-top: 10px;
-    @media screen and (min-width: 1200px) {
-        margin-top: 30px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 

@@ -1,37 +1,55 @@
-.lang__list{
-    display: flex;
-    align-items: center;
-    width: 70px;
-    color: $permanent-dark-blue;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
-}
-
-.lang__item{
-    border-bottom: 1px solid transparent;
-    padding-bottom: 7px;
-    &:not(:last-child) {
-        &::after{
-        content: '';
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background-color: $permanent-light-blue;
-        margin-left: 10px;
-        margin-right: 10px;
+.lang{
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        color: $permanent-dark-blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+    &--mobile{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        color: $permanent-dark-blue;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+    }
+    &__item{
+        border-bottom: 1px solid transparent;
+        padding-bottom: 7px;
+        &:not(:last-child) {
+            &::after{
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $permanent-light-blue;
+            margin-left: 10px;
+            margin-right: 10px;
+            }
+        }
+    }
+    &__link{
+        &:hover {
+            color: $permanent-dark-blue;
+            border-bottom: 1px solid $permanent-dark-blue;
+        }
+        &:active {
+            color: $permanent-dark-mint-biruza;
+            border-bottom: 1px solid $permanent-dark-mint-biruza;
         }
     }
 }
 
-.lang__link{
-    &:hover {
-        color: $permanent-dark-blue;
-        border-bottom: 1px solid $permanent-dark-blue;
-    }
-    &:active {
-        color: $permanent-dark-mint-biruza;
-        border-bottom: 1px solid $permanent-dark-mint-biruza;
-    }
-}
+
+

@@ -1,5 +1,18 @@
 .button{
     cursor: pointer;
+    &--underline{
+        border: none;
+        background-color: transparent;
+        border-bottom: 1.5px solid transparent;
+        &:hover {
+            border-bottom: 1.5px solid rgba($permanent-blue-smoke, 0.5);
+        }
+        &-white{
+            &:hover {
+                border-bottom: 1.5px solid rgba($white, 0.5);
+            }
+        }
+    }
     &__name{
         padding-bottom: 5px;
         color: $permanent-dark-blue;
@@ -11,6 +24,12 @@
             font-weight: 400;
             line-height: 1.7; 
         }
+        &--big{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 120%;
+            
+        }
         &--white{
             color: $white;
         }
@@ -20,13 +39,4 @@
         margin-bottom: 3px;
         fill: $permanent-dark-blue;
     }
-    &--underline{
-        border: none;
-        background-color: transparent;
-        border-bottom: 1.5px solid transparent;
-        &:hover {
-            border-bottom: 1.5px solid rgba($permanent-blue-smoke, 0.5);
-        }
-    }
-    
 }

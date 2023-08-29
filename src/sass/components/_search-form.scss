@@ -1,12 +1,6 @@
-.search-form{
+.search{
     position: relative;
-    border-radius: 10px;
-    background-color: $permanent-light-blue;
-    width: 100%;
-}
-
-
-.search-input{
+    &__input{
     outline: none;
     background-color: inherit;
     height: 44px;
@@ -17,6 +11,9 @@
     color: $permanent-dark-blue;
     border: 2px solid transparent;
     width: 97%;
+    border-radius: 10px;
+    background-color: $permanent-light-blue;
+    width: 100%;
 
     @media screen and (max-width: 480px) {
         padding-left: 8px;
@@ -46,13 +43,14 @@
     &:focus{
         border: 2px solid $permanent-dark-blue;
     }
+    }
 
-}
-
-.search-button {
+    &__button {
+    border: none;
+    background-color: transparent;
     position: absolute;
     padding: 16px 12px;
-    top: 0px;
+    top: -5px;
     right: 3px;
     z-index: 3;
     transition: transform 0.5s ease;
@@ -61,4 +59,6 @@
         &:focus{
             transform: scale(1.3);
         }
+    }
 }
+

@@ -1,4 +1,4 @@
-.header__btn-menu{
+.button__menu{
     position: relative;
     display: flex;
     align-items: center;
@@ -18,26 +18,13 @@
             margin-right: 20px;
         }
     }
-}
 
-.header__btn-menu-subtitle{
-    display: none;
-    @media screen and (min-width: 1200px) {
-        display: block;
+    &--subtitle{
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
     }
 }
 
-// .menu__btn-block{
-//     position: relative;
-//     background-color: $permanent-yellow;
-//     height: 59px;
-//     width: 64px;
-//     border-top-left-radius: 10px;
-// }
-
-// .menu__btn-burger{
-//     padding: 15px;
-//     border: none;
-//     background-color: transparent;
-// }
 
