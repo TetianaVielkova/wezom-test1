@@ -1,5 +1,26 @@
 .button{
     cursor: pointer;
+
+    &--shopcard--popup{
+        display: flex;
+        align-items: center;
+        background-color: $green;
+        border: none;
+        color: $white;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        border-bottom-left-radius: 10px;
+        height: 60px;
+        padding: 10px;
+        svg{
+            margin-left: 20px;
+        }
+        
+        &:hover{
+            background-color: $permanent-dark-mint-biruza;
+        }
+    }
     &--shopcard {
     display: flex;
     align-items: center;

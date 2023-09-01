@@ -2,20 +2,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const headerBtnMenu = document.querySelector('.js-btn-menu');
     const catalog = document.querySelector('.js-category');
-    const iconMenu = document.querySelector('.icon__menu');
-    const iconClose = document.querySelector('.icon__close');
+    const iconMenu = document.querySelector('.js-menu-icon');
+    const iconClose = document.querySelector('.js-close-icon');
 
     headerBtnMenu.addEventListener('click', (e) => {
         catalog.classList.toggle('category--active');
-        iconMenu.classList.toggle('hidden'); 
-        iconClose.classList.toggle('hidden'); 
+        iconMenu.classList.toggle('js-hidden'); 
+        iconClose.classList.toggle('js-hidden'); 
     });
 
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.js-close-category')) {
             catalog.classList.remove('category--active');
-            iconMenu.classList.remove('hidden');
-            iconClose.classList.add('hidden');
+            iconMenu.classList.remove('js-hidden');
+            iconClose.classList.add('js-hidden');
         }
     });
 });

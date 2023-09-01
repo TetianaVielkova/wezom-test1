@@ -8,7 +8,7 @@
     padding-bottom: 7px;
     border-bottom: 1px solid transparent;
 
-    svg{
+    &__icon{
         margin-left: 12px;
         fill: $permanent-yellow;
     }
@@ -21,7 +21,7 @@
         color: $permanent-dark-mint-biruza;
         border-bottom: 1px solid $permanent-dark-mint-biruza;
 
-        svg{
+        &__icon{
             fill: $permanent-dark-mint-biruza;
         }
     }

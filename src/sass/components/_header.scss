@@ -7,65 +7,53 @@
         padding-left: 50px;
         padding-right: 50px;
     }
-}
-.header__desctop{
-    display: none;
-    @media screen and (min-width: 1200px) {
+
+    &__desctop{
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
+    }
+    
+    &__mobile{
         display: block;
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
     }
-}
-.header__mobile{
-    display: block;
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
 
-.header__conteiner-menu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 500;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: $white;
-    padding: 30px 30px;
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.is-open {
-        transform: translateX(0);
+    &__mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 500;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $white;
+        padding: 30px 30px;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &.is-open {
+            transform: translateX(0);
+        }
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
     }
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
 
-.menu{
-    &--burger{
-    position: relative;
-    background-color: $permanent-yellow;
-    height: 60px;
-    width: 60px;
-    margin-bottom: -12px;
-    border-top-left-radius: 10px;
-    @media screen and (min-width: 1200px) {
+    &__box-category{
         display: none;
-    }
-    }   
-}
-
-.header__box-category{
-    display: none;
-    @media screen and (min-width: 1200px) {
-    display: block;
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: $permanent-yellow;
-    padding: 15px 20px 15px 20px;
-    border-top-left-radius: 10px;
-    width: 330px;
+        @media screen and (min-width: 1200px) {
+        display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: $permanent-yellow;
+        padding: 15px 20px 15px 20px;
+        border-top-left-radius: 10px;
+        width: 330px;
+        }
     }
 }

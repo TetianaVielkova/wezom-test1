@@ -64,7 +64,7 @@ termsText.forEach((element) => {
 showElements.forEach((element) => {
   element.addEventListener('click', () => {
     const termsText = element.nextElementSibling;
-    const arrowIcon = element.querySelector('.show--icon');
+    const arrowIcon = element.querySelector('.js-show-icon');
 
     if (termsText.style.display === 'none') {
       termsText.style.display = 'block';

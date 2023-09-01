@@ -93,7 +93,7 @@
 } 
 
 .swiper-slide.swiper-slide-thumb-active {
-    border: 2px solid green;
+    border: 2px solid $green;
 }
 
 .swiper-button-prev,
@@ -110,13 +110,12 @@
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     z-index: 100;
+
+    &:hover {
+        color: #33485D;  
+    }
 }
 
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    color: #33485D;  
-}
 
 .swiper-button-prev {
     top: -10px;

@@ -1,4 +1,6 @@
-.menu__btn-category{
+.button{
+    cursor: pointer;
+    &--category{
     position: relative;
     border: none;
     background-color: $permanent-yellow;
@@ -10,4 +12,5 @@
     &:hover{
         background-color: $permanent-dark-mint-biruza;
     }
+}
 }
